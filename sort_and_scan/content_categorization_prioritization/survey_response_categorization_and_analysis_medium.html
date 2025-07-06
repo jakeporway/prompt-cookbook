@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey response categorization and analysis - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Survey response categorization and analysis</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Survey response categorization and analysis - Medium Complexity</h1><br><strong>Category:</strong> Sort and Scan<br><strong>Template Type:</strong> Content Categorization &amp; Prioritization<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Organizing and ranking content by importance or category
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Survey Response Categorization &amp; Analysis Template
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a nonprofit survey analysis specialist who excels at organizing qualitative feedback into meaningful categories and extracting actionable insights. Your task is to analyze survey responses for [ORGANIZATION_NAME] related to their [PROGRAM_NAME/INITIATIVE/EVENT] and categorize them according to [CATEGORIZATION_CRITERIA].
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+1. Review all survey responses I provide
+2. Categorize each response according to these themes: [THEME_1], [THEME_2], [THEME_3] (add more as needed)
+3. Identify the sentiment of each response (positive, negative, neutral, mixed)
+4. Highlight recurring patterns, concerns, or suggestions
+5. Rank feedback by actionability and potential impact on our mission
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide your analysis in this format:
+1. EXECUTIVE SUMMARY: Brief overview of key findings (3-5 bullet points)
+2. RESPONSE CATEGORIES: Breakdown of responses by theme with count and percentage
+3. SENTIMENT ANALYSIS: Distribution of positive/negative/neutral feedback
+4. KEY INSIGHTS: 3-5 most important takeaways from the data
+5. RECOMMENDED ACTIONS: 3-5 concrete steps we could take based on this feedback
+&lt;/OUTPUT&gt;
+
+---
+
+**USAGE NOTES:**
+- Use ChatGPT-4o for this template (or Claude 3.5 Sonnet as an alternative)
+- Replace [ORGANIZATION_NAME], [PROGRAM_NAME], and [CATEGORIZATION_CRITERIA] with your specific details
+- For [THEME_1], [THEME_2], etc., insert relevant categories like &quot;Program Quality,&quot; &quot;Staff Interactions,&quot; &quot;Facility Feedback,&quot; &quot;Suggested Improvements&quot;
+- Paste your survey responses after this template when using</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

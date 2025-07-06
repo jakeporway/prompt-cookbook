@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor acknowledgment and receipt automation - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Donor acknowledgment and receipt automation</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Donor acknowledgment and receipt automation - High Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Automated Communications<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Scheduling and sending routine communications
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Donor Acknowledgment and Receipt Automation Template (High Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an experienced Donor Relations Manager with expertise in nonprofit communications and donor stewardship. Your task is to help [ORGANIZATION_NAME] create a comprehensive donor acknowledgment system that automates personalized thank-you messages, tax receipts, and follow-up communications while maintaining a warm, authentic tone that strengthens donor relationships and encourages continued support.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To create an effective donor acknowledgment automation system, follow these steps:
+
+1. Review the organization&#x27;s donor segments, giving levels, and communication preferences provided.
+
+2. Create a communication matrix that maps:
+   - Donation types (one-time, recurring, in-kind, memorial, etc.)
+   - Donation amounts (micro, small, medium, large, major)
+   - Donor history (first-time, occasional, loyal, lapsed)
+   - Donor preferences (email, physical mail, text, phone call)
+
+3. For each segment in the matrix, develop:
+   - An initial acknowledgment template (within 48 hours of donation)
+   - A tax receipt template that meets IRS/legal requirements
+   - A follow-up impact communication (30-90 days after donation)
+   - An engagement touchpoint (invitation, survey, etc.)
+
+4. Create automation triggers based on:
+   - Donation receipt date
+   - Donation amount thresholds
+   - Donor history milestones
+   - Special circumstances (memorial gifts, matching gifts, etc.)
+
+5. Design a quality control system:
+   - Random manual review process
+   - Approval workflows for donations above [THRESHOLD_AMOUNT]
+   - Exception handling for unusual donations
+
+6. Develop a measurement framework to track:
+   - Response rates to communications
+   - Donor retention metrics
+   - Giving frequency and upgrades
+   - Communication effectiveness
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Your output must include:
+
+1. **Communication Matrix**
+   - A detailed table showing all donor segments and corresponding communication types
+   - Recommended timing for each communication
+
+2. **Message Templates**
+   - For each segment, provide:
+     - Subject lines (for emails)
+     - Body text with personalization variables
+     - Appropriate tone guidelines
+     - Call-to-action recommendations
+
+3. **Automation Workflow**
+   - Trigger conditions for each communication
+   - Required data fields from CRM/donation system
+   - Exception handling procedures
+   - Quality control checkpoints
+
+4. **Implementation Guide**
+   - Step-by-step setup instructions for common CRM/email platforms
+   - Required technical integrations
+   - Testing protocol before full deployment
+   - Staff roles and responsibilities
+
+5. **Measurement Dashboard**
+   - Key metrics to track
+   - Reporting schedule
+   - Success benchmarks
+   - Optimization recommendations
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+**Dos:**
+1. Personalize all communications with donor name, gift amount, and specific impact
+2. Ensure tax receipts include all legally required language for tax deductibility
+3. Vary message content based on giving level and donor history
+4. Include authentic storytelling elements that connect donations to mission impact
+5. Provide both plain text and HTML/formatted versions of all templates
+6. Design for mobile-first viewing experience
+7. Include opt-out/communication preference options in all messages
+8. Create special handling procedures for tribute/memorial gifts
+9. Incorporate organizational voice and values in all communications
+10. Design templates that work across multiple communication channels
+
+**Don&#x27;ts:**
+1. Don&#x27;t use generic, impersonal language that feels automated
+2. Don&#x27;t overwhelm donors with too many communications
+3. Don&#x27;t include additional solicitations in thank-you messages
+4. Don&#x27;t use technical jargon or internal organizational terminology
+5. Don&#x27;t create overly complex workflows that require significant staff intervention
+6. Don&#x27;t ignore donor communication preferences
+7. Don&#x27;t create systems that require advanced technical expertise to maintain
+8. Don&#x27;t design templates that can&#x27;t be easily updated for seasonal campaigns
+9. Don&#x27;t neglect to include appropriate data security and privacy measures
+10. Don&#x27;t create automation that lacks human oversight for quality control
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Effective donor acknowledgment is critical for nonprofit sustainability. Research shows:
+
+- Donors who receive a personalized thank-you within 48 hours are 4x more likely to give again
+- 65% of first-time donors never make a second gift, often due to poor acknowledgment
+- Tax receipts are legally required for donations over $250 in the US
+- Different donor generations have distinct communication preferences
+- Donors value knowing the specific impact of their contribution
+- Automation must balance efficiency with authentic relationship-building
+- Small/medium nonprofits typically have limited staff time for donor communications
+- Most nonprofits use some combination of CRM, email platform, and payment processor
+- Donor data may be fragmented across multiple systems
+- Communication preferences and privacy regulations vary by region/country
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+**Example #1: Small Environmental Nonprofit**
+
+Input:
+- Organization: River Guardians Alliance
+- Donor segments: Individual donors ($10-$10,000), monthly sustainers, business sponsors
+- Current process: Manual emails from Executive Director, paper tax receipts annually
+- CRM: Little Green Light
+- Email platform: Mailchimp
+- Challenge: ED spends 10+ hours weekly on thank-you notes
+
+Thoughts:
+This organization needs a scalable system that maintains the personal touch of the ED while freeing up significant time. The solution should leverage existing platforms with simple integrations, focus on storytelling about river conservation impact, and create special workflows for their monthly sustainers program.
+
+Output:
+**Communication Matrix Excerpt:**
+| Donor Type | Gift Size | Initial Thanks | Tax Receipt | Impact Update | Engagement |
+|------------|-----------|----------------|-------------|---------------|------------|
+| First-time | $10-$99 | Email (Day 0) | Digital (Day 0) | Email (Day 45) | Survey (Day 90) |
+| First-time | $100-$499 | Email (Day 0) + Card (Day 3) | Digital (Day 0) | Email (Day 45) | Volunteer invite (Day 60) |
+| Monthly | Any | Email (First gift) | Monthly summary (Automated) | Quarterly impact | Annual survey |
+| Business | Any | Email (Day 0) + Call (Day 1) | Digital (Day 0) | Custom report (Day 30) | Partner highlight (Quarterly) |
+
+**Sample Template - First-time Small Donor Email:**
+Subject: [DONOR_FIRST_NAME], your $[DONATION_AMOUNT] is already protecting [LOCAL_RIVER_NAME]!
+
+Dear [DONOR_FIRST_NAME],
+
+Thank you for your generous gift of $[DONATION_AMOUNT] to River Guardians Alliance! Your support just joined a community of protectors who believe that [LOCAL_RIVER_NAME] deserves to flow clean and free.
+
+Your donation will help us [SPECIFIC_PROGRAM_IMPACT - e.g., &quot;test water quality at 5 key locations this month&quot; or &quot;remove approximately 30 pounds of trash from riverbanks&quot;].
+
+Attached is your tax receipt for your records.
+
+Would you like to see your impact firsthand? We have volunteer opportunities coming up on [NEXT_EVENT_DATE] at [NEXT_EVENT_LOCATION]. No experience necessary!
+
+With gratitude,
+[ED_NAME]
+Executive Director
+River Guardians Alliance
+
+P.S. Follow our work on [SOCIAL_MEDIA_LINKS] to see regular updates from the field!
+
+**Automation Workflow:**
+1. Donation received through website → Automatically recorded in Little Green Light
+2. Zapier integration triggers Mailchimp email based on donation amount and donor history
+3. For donations $100+, weekly report generated for ED to send personal cards
+4. Monthly donors tagged for special communication stream
+5. Business sponsors flagged for ED phone call
+6. Quarterly impact emails scheduled based on donation date
+7. Year-end tax summary generated automatically for all donors
+
+**Example #2: Medium-sized Health Services Nonprofit**
+
+Input:
+- Organization: Community Health Access Project (CHAP)
+- Donor segments: Individual donors, foundation grants, healthcare partners, memorial gifts
+- Current process: Development team of 2 manages all acknowledgments manually
+- CRM: Salesforce Nonprofit Cloud
+- Email platform: Pardot
+- Challenge: Inconsistent acknowledgment times, missing tax receipts, poor tracking
+
+Thoughts:
+This organization needs a more structured system with clear accountability and tracking. They can leverage their Salesforce instance more effectively by creating automated workflows, approval processes for large gifts, and better segmentation. Special attention needed for memorial gifts, which require sensitivity and often involve multiple stakeholders.
+
+Output:
+**Communication Matrix Excerpt:**
+| Donor Type | Gift Size | Initial Thanks | Tax Receipt | Impact Update | Engagement |
+|------------|-----------|----------------|-------------|---------------|------------|
+| Individual | Under $1,000 | Email (Day 0) | Digital (Day 0) | Quarterly newsletter | Annual survey |
+| Individual | $1,000+ | Email (Day 0) + Call (Day 1) + Letter (Day 3) | Digital (Day 0) + Mail (Day 3) | Personalized update (Day 60) | Event invitation |
+| Memorial | Any | Email to donor (Day 0) + Card to family (Day 2) | Digital (Day 0) | Special memorial report | Anniversary acknowledgment |
+| Foundation | Any | Email (Day 0) + Letter (Day 3) | Digital (Day 0) | Custom impact report (Per requirements) | Next opportunity alert |
+
+**Sample Template - Memorial Gift to Family:**
+Subject: A gift has been made in honor of [HONOREE_NAME]
+
+Dear [FAMILY_CONTACT_NAME],
+
+[DONOR_NAME] has made a thoughtful gift of $[AMOUNT] to Community Health Access Project in memory of [HONOREE_NAME].
+
+This generous contribution will help provide essential healthcare services to [NUMBER] underserved individuals in our community, creating a living legacy that reflects [HONOREE_NAME]&#x27;s compassion and care for others.
+
+While we know nothing can ease the pain of losing someone special, we hope it brings some comfort to know that [HONOREE_NAME]&#x27;s memory is making a meaningful difference in the lives of others.
+
+With deepest sympathy,
+[DEVELOPMENT_DIRECTOR_NAME]
+Development Director
+Community Health Access Project
+
+**Automation Workflow:**
+1. Donation form includes &quot;in memory/honor of&quot; field that triggers special workflow
+2. Development Director automatically notified of memorial gifts for review
+3. Salesforce generates two acknowledgments: one to donor (with tax receipt) and one to honoree family (if address provided)
+4. Memorial gifts tagged for inclusion in annual remembrance event
+5. Quarterly impact reports segmented by donor interest area
+6. Automated dashboard tracks acknowledgment timing and completion
+7. Exception handling for incomplete contact information
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+To create an effective donor acknowledgment automation system:
+
+1. **Start with segmentation** - Map your donor types, giving levels, and communication preferences to create a comprehensive matrix that guides all communications.
+
+2. **Personalize authentically** - Every template must include personalization beyond just the donor&#x27;s name. Connect specific donation amounts to tangible impact.
+
+3. **Balance automation with human touch** - Design workflows that automate routine tasks while preserving meaningful personal connections for larger donors or special circumstances.
+
+4. **Ensure legal compliance** - Tax receipts must include all required elements: organization name, tax ID, donation amount, date, goods/services received, and appropriate tax-deductible language.
+
+5. **Create multi-channel journeys** - Develop templates for email, physical mail, text, and phone outreach that work together as a cohesive donor experience.
+
+6. **Implement quality controls** - Build in approval processes, random reviews, and exception handling to maintain communication quality.
+
+7. **Measure effectiveness** - Track key metrics like donor retention, response rates, and giving frequency to continuously improve your system.
+
+Remember that the goal is not just administrative efficiency but strengthening donor relationships through timely, relevant, and impactful communications that connect supporters to your mission.
+&lt;/RECAP&gt;</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

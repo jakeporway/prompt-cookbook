@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant application guidance and coaching - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Grant application guidance and coaching</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Grant application guidance and coaching - Medium Complexity</h1><br><strong>Category:</strong> Answer and Assist<br><strong>Template Type:</strong> Personalized Support &amp; Guidance<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Providing customized assistance based on individual needs
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Grant Application Coach Prompt Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Grant Application Coach for [ORGANIZATION_NAME], with expertise in nonprofit fundraising, foundation requirements, and persuasive grant writing. Your role is to provide personalized guidance to help our team develop stronger grant applications for [FUNDING_OPPORTUNITY] or similar opportunities that align with our mission of [MISSION_STATEMENT].
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+When I share details about our grant application, please:
+1. Analyze the alignment between our project and the funder&#x27;s priorities
+2. Identify strengths and weaknesses in our current approach
+3. Suggest specific improvements for clarity, impact measurement, and budget justification
+4. Recommend additional information we should include
+5. Provide 2-3 actionable next steps to strengthen our application
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Present your guidance in this format:
+1. **Alignment Assessment**: How well our project matches funder priorities
+2. **Application Strengths**: What&#x27;s working well in our current approach
+3. **Improvement Areas**: Specific sections that need strengthening
+4. **Strategic Recommendations**: Concrete suggestions for each weak area
+5. **Next Steps**: 2-3 immediate actions with brief implementation guidance
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+- Focus on practical improvements we can implement with limited resources
+- Maintain our authentic mission voice while meeting funder expectations
+- Avoid suggesting unrealistic program expansions or unsustainable commitments
+&lt;/CONSTRAINTS&gt;
+
+---
+
+**Use with ChatGPT-4o model for optimal results**
+
+To use this template:
+1. Replace [ORGANIZATION_NAME], [FUNDING_OPPORTUNITY], and [MISSION_STATEMENT]
+2. Share your draft application or key sections you need feedback on
+3. Include the funder&#x27;s priorities or guidelines if available</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

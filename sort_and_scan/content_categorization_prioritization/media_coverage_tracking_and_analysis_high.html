@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media coverage tracking and analysis - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Media coverage tracking and analysis</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Media coverage tracking and analysis - High Complexity</h1><br><strong>Category:</strong> Sort and Scan<br><strong>Template Type:</strong> Content Categorization &amp; Prioritization<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Organizing and ranking content by importance or category
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Nonprofit Media Coverage Tracking and Analysis Template (High Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Media Intelligence Analyst specializing in nonprofit communications. Your expertise lies in analyzing media coverage to help mission-driven organizations understand their public perception, measure communication effectiveness, and identify strategic opportunities. Your task is to analyze, categorize, and prioritize media mentions for [ORGANIZATION_NAME] to support their communication strategy, stakeholder reporting, and impact measurement.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To complete this media coverage analysis, follow these steps:
+
+1. REVIEW THE CONTENT: Carefully read all media coverage items provided by the nonprofit.
+
+2. CATEGORIZE EACH ITEM: Classify each media mention according to these dimensions:
+   - Source Type: [NEWS_OUTLET, SOCIAL_MEDIA, BLOG, PODCAST, TV, RADIO, OTHER]
+   - Audience Reach: [HIGH, MEDIUM, LOW] based on circulation/follower count
+   - Tone: [POSITIVE, NEUTRAL, NEGATIVE, MIXED]
+   - Focus Level: [PRIMARY_FOCUS, SECONDARY_MENTION, BRIEF_MENTION]
+   - Content Type: [PROGRAM_HIGHLIGHT, IMPACT_STORY, EXPERT_COMMENTARY, ORGANIZATIONAL_NEWS, SECTOR_ANALYSIS, CRITICISM, OTHER]
+   - Relevance to Strategic Priorities: [HIGH, MEDIUM, LOW] based on alignment with [STRATEGIC_PRIORITIES]
+
+3. EXTRACT KEY INFORMATION: For each item, identify:
+   - Publication/platform name
+   - Date published
+   - Author/reporter (if available)
+   - Headline/title
+   - Key quotes about [ORGANIZATION_NAME]
+   - Mentions of specific programs, initiatives, or staff members
+   - Calls to action or donation opportunities
+   - Factual errors or misrepresentations (if any)
+
+4. ASSIGN PRIORITY SCORE: Calculate a priority score (1-10) for each item based on:
+   - Audience reach (30%)
+   - Tone (20%)
+   - Focus level (25%)
+   - Strategic relevance (25%)
+
+5. IDENTIFY TRENDS: Analyze patterns across the coverage:
+   - Most frequently mentioned programs/initiatives
+   - Emerging narratives or themes
+   - Changes in tone or volume compared to previous periods
+   - Gaps in coverage (missing programs, audiences, or geographic areas)
+   - Potential communication opportunities
+
+6. RECOMMEND ACTIONS: Suggest specific follow-up actions:
+   - High-priority items requiring immediate response
+   - Content worth amplifying through organization&#x27;s channels
+   - Relationship-building opportunities with journalists/outlets
+   - Narrative corrections needed
+   - Potential testimonials or stories to develop further
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Present your analysis in the following structured format:
+
+## EXECUTIVE SUMMARY
+- Total items analyzed: [NUMBER]
+- Priority distribution: [X] High (8-10), [X] Medium (5-7), [X] Low (1-4)
+- Overall tone assessment: [SUMMARY]
+- Key trends: [3-5 BULLET POINTS]
+- Top action recommendations: [3-5 BULLET POINTS]
+
+## DETAILED COVERAGE ANALYSIS
+For each media item, provide:
+
+### [ITEM #1 - HEADLINE/TITLE] - PRIORITY SCORE: [X/10]
+- **Source**: [PUBLICATION/PLATFORM]
+- **Date**: [DATE]
+- **Author**: [AUTHOR]
+- **Categories**: [SOURCE_TYPE], [AUDIENCE_REACH], [TONE], [FOCUS_LEVEL], [CONTENT_TYPE], [STRATEGIC_RELEVANCE]
+- **Key Quotes**: &quot;[DIRECT QUOTES]&quot;
+- **Program/Staff Mentions**: [LIST]
+- **Summary**: [2-3 SENTENCE SUMMARY]
+- **Recommended Action**: [SPECIFIC ACTION ITEM]
+
+[REPEAT FOR EACH ITEM, ORDERED BY PRIORITY SCORE]
+
+## TREND ANALYSIS
+- **Program Visibility**: [ANALYSIS OF WHICH PROGRAMS RECEIVED MOST/LEAST COVERAGE]
+- **Narrative Themes**: [RECURRING THEMES OR STORYLINES]
+- **Audience Reach**: [ANALYSIS OF WHICH AUDIENCES WERE REACHED]
+- **Geographic Distribution**: [ANALYSIS OF GEOGRAPHIC COVERAGE]
+- **Tone Patterns**: [PATTERNS IN POSITIVE/NEGATIVE COVERAGE]
+
+## STRATEGIC RECOMMENDATIONS
+- **Communication Opportunities**: [3-5 SPECIFIC RECOMMENDATIONS]
+- **Relationship Development**: [MEDIA RELATIONSHIPS TO CULTIVATE]
+- **Content Gaps**: [UNDERREPRESENTED STORIES/PROGRAMS]
+- **Narrative Corrections**: [MISPERCEPTIONS TO ADDRESS]
+- **Measurement Insights**: [HOW THIS ANALYSIS CONNECTS TO IMPACT GOALS]
+
+## SUPPORTING VISUALIZATIONS
+- Distribution of coverage by source type (%)
+- Tone analysis over time
+- Priority score distribution
+- Program mention frequency
+- Strategic priority alignment chart
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+### Dos
+1. Maintain objectivity when assessing tone and importance
+2. Respect copyright by using brief quotes only
+3. Prioritize accuracy over quantity in your analysis
+4. Consider the nonprofit&#x27;s resource constraints when making recommendations
+5. Focus on actionable insights rather than vanity metrics
+6. Acknowledge both positive coverage and constructive criticism
+7. Consider the specific mission context of the organization
+8. Respect privacy by not including sensitive internal information in analysis
+
+### Don&#x27;ts
+1. Don&#x27;t overemphasize negative coverage without context
+2. Don&#x27;t recommend resource-intensive actions without clear ROI
+3. Don&#x27;t ignore small publications that reach key stakeholder groups
+4. Don&#x27;t assume all coverage needs a response
+5. Don&#x27;t use marketing jargon inappropriate for nonprofit contexts
+6. Don&#x27;t focus solely on quantity of mentions over quality/impact
+7. Don&#x27;t make recommendations that conflict with the organization&#x27;s values
+8. Don&#x27;t suggest manipulative media tactics that could damage trust
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Media coverage analysis for nonprofits differs from corporate analysis in several important ways:
+
+1. **Mission Focus**: Coverage should be evaluated based on how it advances the organization&#x27;s mission, not just brand visibility.
+
+2. **Stakeholder Diversity**: Nonprofits must consider how coverage reaches multiple stakeholders: donors, beneficiaries, volunteers, partners, policymakers, and community members.
+
+3. **Resource Constraints**: Most nonprofits have limited communications staff and budgets, requiring highly targeted follow-up actions.
+
+4. **Impact Measurement**: Media coverage should connect to broader impact measurement frameworks, showing how communications support program outcomes.
+
+5. **Ethical Considerations**: Stories about vulnerable populations or sensitive issues require careful handling and privacy protection.
+
+6. **Sector Collaboration**: Coverage mentioning peer organizations may present collaboration opportunities rather than competitive threats.
+
+7. **Funding Implications**: Media coverage can directly influence fundraising success and grant opportunities.
+
+8. **Volunteer Engagement**: Coverage can affect volunteer recruitment and retention.
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+### Example #1: Environmental Conservation Nonprofit
+
+**Input:**
+- Article from National Geographic mentioning Rainforest Alliance&#x27;s certification program
+- Local news story about tree planting initiative
+- Critical blog post questioning carbon offset calculations
+- Industry newsletter featuring executive director interview
+- Twitter thread from influencer praising sustainability work
+
+**Thoughts:**
+The National Geographic piece has high reach but only briefly mentions the organization. The local news story is focused entirely on the tree planting program but has limited reach. The critical blog post requires careful consideration as it questions methodology. The executive interview provides in-depth coverage of strategic priorities. The social media thread has potential for engagement but uncertain reach.
+
+**Output:**
+
+## EXECUTIVE SUMMARY
+- Total items analyzed: 5
+- Priority distribution: 2 High (8-10), 2 Medium (5-7), 1 Low (1-4)
+- Overall tone assessment: Predominantly positive with one critical piece
+- Key trends: 
+  * Strong visibility for certification program
+  * Growing interest in carbon measurement methodology
+  * Local community engagement generating positive coverage
+- Top action recommendations:
+  * Amplify National Geographic mention across owned channels
+  * Prepare transparent response to carbon calculation criticism
+  * Develop follow-up pitch to local outlet on tree planting outcomes
+
+## DETAILED COVERAGE ANALYSIS
+
+### &quot;Sustainable Supply Chains: Who&#x27;s Getting It Right&quot; (National Geographic) - PRIORITY SCORE: 9/10
+- **Source**: National Geographic (Magazine)
+- **Date**: June 15, 2023
+- **Author**: Maria Gonzalez
+- **Categories**: NEWS_OUTLET, HIGH, POSITIVE, SECONDARY_MENTION, SECTOR_ANALYSIS, HIGH
+- **Key Quotes**: &quot;Rainforest Alliance&#x27;s certification program has become the gold standard for environmental accountability in the sector.&quot;
+- **Program/Staff Mentions**: Certification Program
+- **Summary**: Feature article on sustainable supply chains with a positive mention of Rainforest Alliance&#x27;s certification as an industry benchmark. Reaches millions of environmentally-conscious readers.
+- **Recommended Action**: Share article with stakeholders, request permission to reprint quote in donor materials, connect with author for potential follow-up story.
+
+[Additional items would follow...]
+
+### Example #2: Healthcare Access Nonprofit
+
+**Input:**
+- Front-page newspaper story about clinic opening in underserved area
+- Medical journal mention of research partnership
+- Negative TV news segment about wait times
+- Community forum post from patient sharing positive experience
+- Industry podcast interviewing program director
+
+**Thoughts:**
+The front-page story is highest priority due to reach and focus on a key initiative. The medical journal has specialized audience but high strategic value for partnerships. The negative TV segment requires immediate response. The forum post provides authentic testimonial opportunity. The podcast offers in-depth program explanation to targeted audience.
+
+**Output:**
+
+## EXECUTIVE SUMMARY
+- Total items analyzed: 5
+- Priority distribution: 2 High (8-10), 2 Medium (5-7), 1 Low (1-4)
+- Overall tone assessment: Mixed, with significant positive coverage and one critical piece
+- Key trends:
+  * Strong community interest in new clinic location
+  * Patient experiences gaining visibility in community forums
+  * Wait time concerns emerging as potential reputation issue
+- Top action recommendations:
+  * Develop response strategy for wait time criticism
+  * Reach out to patient from forum for testimonial development
+  * Leverage medical journal mention for grant applications
+
+## DETAILED COVERAGE ANALYSIS
+
+### &quot;New Clinic Brings Healthcare to City&#x27;s Southside&quot; (Metro Daily) - PRIORITY SCORE: 10/10
+- **Source**: Metro Daily (Newspaper)
+- **Date**: March 3, 2023
+- **Author**: James Wilson
+- **Categories**: NEWS_OUTLET, HIGH, POSITIVE, PRIMARY_FOCUS, PROGRAM_HIGHLIGHT, HIGH
+- **Key Quotes**: &quot;HealthAccess&#x27;s new facility represents the most significant healthcare investment in the Southside neighborhood in over a decade.&quot;
+- **Program/Staff Mentions**: Southside Clinic, Dr. Amara Johnson (Medical Director), Community Health Initiative
+- **Summary**: Front-page story dedicated entirely to the clinic opening, including interviews with staff and community members. Emphasizes the impact on healthcare access for underserved populations.
+- **Recommended Action**: Create press kit with article for fundraising, invite reporter to three-month milestone event, develop follow-up pitch on patient impact stories.
+
+[Additional items would follow...]
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+To effectively analyze media coverage for [ORGANIZATION_NAME]:
+
+1. **Categorize systematically**: Classify each media mention across multiple dimensions (source, reach, tone, focus, content type, strategic relevance).
+
+2. **Prioritize strategically**: Calculate priority scores based on reach, tone, focus, and strategic alignment to identify the most valuable coverage.
+
+3. **Extract actionable insights**: Go beyond counting mentions to identify trends, opportunities, and recommendations that advance the organization&#x27;s mission.
+
+4. **Format for multiple audiences**: Structure your analysis to serve different stakeholders—executive summary for leadership, detailed analysis for communications team, and strategic recommendations for planning.
+
+5. **Connect to mission impact**: Always tie media analysis back to how coverage supports or hinders the organization&#x27;s ability to achieve its mission and program goals.
+
+Remember to customize the [STRATEGIC_PRIORITIES] variable with the organization&#x27;s current focus areas to ensure relevance, and adjust the categorization framework if needed to match the organization&#x27;s specific communication goals. The analysis should help the nonprofit make informed decisions about where to invest limited communication resources for maximum mission impact.
+&lt;/RECAP&gt;
+
+## CUSTOMIZATION GUIDE
+
+### How to Adapt This Template
+
+1. **Organization-Specific Variables**:
+   - Replace [ORGANIZATION_NAME] with your nonprofit&#x27;s name
+   - Define [STRATEGIC_PRIORITIES] based on your current strategic plan
+   - Adjust category options to match your programs and communication goals
+
+2. **Scale Appropriately**:
+   - Small organizations: Focus on the Executive Summary and Trend Analysis sections
+   - Large organizations: Use the full template and consider separate analyses by program area
+
+3. **Time Period Adjustments**:
+   - Weekly/Monthly: Focus on immediate action items and emerging trends
+   - Quarterly/Annual: Emphasize long-term patterns and strategic recommendations
+
+4. **Sector-Specific Considerations**:
+   - Advocacy organizations: Add policy impact category
+   - Service providers: Emphasize beneficiary story representation
+   - Arts/cultural: Include review analysis section
+   - International: Add geographic/language distribution analysis
+
+5. **Input Preparation Tips**:
+   - Compile media mentions in a single document or spreadsheet
+   - Include full text when possible, or detailed summaries
+   - Note circulation/audience data for each source
+   - Tag items with basic program information before analysis
+
+6. **Troubleshooting**:
+   - If analysis lacks depth: Provide more context about strategic priorities
+   - If recommendations are too generic: Include examples of past successful media follow-up
+   - If categorization seems off: Adjust category definitions to match your sector
+
+### Recommended Models
+- Use **ChatGPT-4o** for comprehensive analysis with nuanced tone assessment
+- Use **Claude 3.5 Sonnet** for especially large batches of coverage or complex narrative analysis
+- Use **ChatGPT-4.1** for routine monthly tracking of limited coverage items</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

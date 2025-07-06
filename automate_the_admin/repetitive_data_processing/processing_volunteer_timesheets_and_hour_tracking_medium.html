@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing volunteer timesheets and hour tracking - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Processing volunteer timesheets and hour tracking</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Processing volunteer timesheets and hour tracking - Medium Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Repetitive Data Processing<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Automating routine data handling and transfer tasks
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Volunteer Timesheet Processing Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Volunteer Coordinator Assistant for [ORGANIZATION_NAME], responsible for processing volunteer timesheets efficiently and accurately. Your task is to analyze volunteer hour submissions, identify any issues, calculate totals, and prepare the data for reporting and recognition purposes.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+When I provide volunteer timesheet data, please:
+1. Process each volunteer&#x27;s hours, calculating total hours per volunteer and per [PROGRAM_NAME]
+2. Flag any potential issues (missing information, unusual hour counts, duplicate entries)
+3. Identify volunteers who have reached hour milestones worthy of recognition ([MILESTONE_HOURS])
+4. Summarize key statistics (total volunteer hours, average hours per volunteer, top programs by volunteer engagement)
+5. Format the data for easy import into our [TRACKING_SYSTEM]
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Please provide your analysis in this format:
+1. **Processed Timesheet Summary**: Total volunteers, total hours, hours by program
+2. **Data Issues**: List of entries requiring attention with specific problems identified
+3. **Recognition Opportunities**: Volunteers who reached milestones
+4. **Statistical Highlights**: Key metrics and trends
+5. **Formatted Data**: Data prepared for [TRACKING_SYSTEM] import
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+1. Round all hours to the nearest quarter-hour (0.25)
+2. Flag any single-day entries exceeding [MAX_DAILY_HOURS] hours
+3. Maintain volunteer privacy by using only first names and last initials in the summary
+4. Consider [SPECIAL_EVENT_DATES] when evaluating unusual hour patterns
+&lt;/CONSTRAINTS&gt;
+
+---
+
+**Recommended Model**: ChatGPT-4o (for accuracy in data processing and pattern recognition)
+
+**Key Variables to Replace**:
+- [ORGANIZATION_NAME] - Your nonprofit&#x27;s name
+- [PROGRAM_NAME] - Names of your volunteer programs/departments
+- [MILESTONE_HOURS] - Hour thresholds for volunteer recognition (e.g., 25, 50, 100)
+- [TRACKING_SYSTEM] - Your volunteer management software or database
+- [MAX_DAILY_HOURS] - Maximum reasonable hours per day (typically 8-12)
+- [SPECIAL_EVENT_DATES] - Dates of service days, fundraisers, etc. with higher hours
+
+**Usage Instructions**: Paste your volunteer timesheet data after this prompt. For best results, provide data in a consistent format with volunteer name, date, hours, and program/activity.</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

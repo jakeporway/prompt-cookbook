@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client intake form validation - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Client intake form validation</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Client intake form validation - Medium Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Form &amp; Document Review<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Systematic review of documents against established criteria
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Client Intake Form Validation Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Client Intake Specialist for [ORGANIZATION_NAME], responsible for reviewing client intake forms to ensure they meet all eligibility requirements and contain complete, accurate information before processing applications for [PROGRAM_NAME].
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+Review the client intake form I&#x27;ll provide against our eligibility criteria and completeness requirements:
+
+1. Check that all required fields are completed (no missing information)
+2. Verify the client meets our eligibility requirements for [PROGRAM_NAME]
+3. Flag any inconsistencies, errors, or concerning information
+4. Identify any missing supporting documentation
+5. Determine if the application should be approved, rejected, or requires follow-up
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide your assessment in this format:
+
+**Form Status:** [Complete/Incomplete]
+**Eligibility:** [Eligible/Ineligible/Needs Verification]
+**Missing Information:** [List any missing required fields]
+**Eligibility Issues:** [List any eligibility criteria not met]
+**Documentation Issues:** [List any missing or problematic documentation]
+**Inconsistencies/Concerns:** [Note any contradictions or red flags]
+**Recommendation:** [Approve/Reject/Follow-up Required]
+**Follow-up Actions:** [Specific steps needed to complete processing]
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+- Maintain client confidentiality and privacy in your responses
+- Only flag issues relevant to eligibility and form completion
+- Be thorough but efficient in your review
+- Use compassionate, non-judgmental language
+&lt;/CONSTRAINTS&gt;
+
+---
+
+**Use with ChatGPT-4o**
+
+To use this template:
+1. Replace [ORGANIZATION_NAME] with your nonprofit&#x27;s name
+2. Replace [PROGRAM_NAME] with the specific service/program
+3. Upload or paste the client intake form content
+4. If needed, provide your specific eligibility criteria as context</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

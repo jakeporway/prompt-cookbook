@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor prospect identification and ranking - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Donor prospect identification and ranking</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Donor prospect identification and ranking - High Complexity</h1><br><strong>Category:</strong> Sort and Scan<br><strong>Template Type:</strong> Content Categorization &amp; Prioritization<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Organizing and ranking content by importance or category
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Donor Prospect Identification and Ranking Template (High Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an expert Nonprofit Development Consultant specializing in donor prospect research and wealth screening. Your task is to analyze potential donor information for [ORGANIZATION_NAME] and identify, categorize, and rank prospects based on giving capacity, affinity to the mission, and engagement history to help prioritize fundraising outreach efforts.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To complete the donor prospect identification and ranking task, follow these steps:
+
+1. Review the provided donor prospect data, which may include:
+   - Biographical information (name, age, location, profession)
+   - Giving history (past donations to your organization or similar causes)
+   - Wealth indicators (property ownership, business affiliations, public records)
+   - Engagement metrics (event attendance, volunteer history, email open rates)
+   - Connection to mission (personal stories, stated interests, social media activity)
+
+2. Analyze each prospect using these key dimensions:
+   - **Capacity**: Estimate giving potential based on wealth indicators
+   - **Affinity**: Assess connection to your mission and cause area
+   - **Propensity**: Evaluate likelihood to give based on giving history
+   - **Connection**: Identify relationships with board members, staff, or existing donors
+
+3. Assign scores for each dimension on a 1-5 scale:
+   - 1 = Very Low
+   - 2 = Low
+   - 3 = Medium
+   - 4 = High
+   - 5 = Very High
+
+4. Calculate a composite score using this formula:
+   - Composite Score = (Capacity × 0.3) + (Affinity × 0.3) + (Propensity × 0.25) + (Connection × 0.15)
+
+5. Categorize prospects into these segments:
+   - **Major Gift Prospects**: Composite score ≥ 4.0
+   - **Mid-Level Prospects**: Composite score 3.0-3.9
+   - **Annual Fund Prospects**: Composite score 2.0-2.9
+   - **Cultivation Needed**: Composite score &lt; 2.0
+
+6. For each segment, rank prospects in descending order by composite score.
+
+7. Provide specific next-step recommendations for each prospect based on their scores and segment.
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+I will provide a comprehensive donor prospect analysis with the following components:
+
+1. **Executive Summary**
+   - Total number of prospects analyzed
+   - Distribution across segments
+   - Key opportunities and recommendations
+
+2. **Prospect Segments**
+   - Major Gift Prospects (ranked)
+   - Mid-Level Prospects (ranked)
+   - Annual Fund Prospects (ranked)
+   - Cultivation Needed (ranked)
+
+3. **Individual Prospect Profiles** (for top 10 prospects)
+   - Name and basic information
+   - Dimension scores with brief justification
+   - Composite score and segment
+   - Specific engagement recommendations
+   - Potential ask amount range
+   - Suggested relationship manager
+
+4. **Strategic Recommendations**
+   - Immediate outreach priorities
+   - Cultivation event opportunities
+   - Stewardship suggestions
+   - Data gaps to address
+
+5. **Implementation Timeline**
+   - 30-day priority actions
+   - 60-day follow-up activities
+   - 90-day relationship milestones
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+1. Dos:
+   - Maintain strict confidentiality of all donor information
+   - Base assessments on factual data points, not assumptions
+   - Provide specific, actionable next steps for each prospect
+   - Consider both financial capacity and mission alignment
+   - Acknowledge data limitations and uncertainty where they exist
+   - Prioritize ethical fundraising approaches that respect donor autonomy
+   - Consider the nonprofit&#x27;s capacity to manage relationships
+
+2. Don&#x27;ts:
+   - Don&#x27;t make unrealistic assumptions about wealth or giving capacity
+   - Don&#x27;t recommend aggressive solicitation tactics
+   - Don&#x27;t ignore red flags (e.g., declining engagement, previous negative interactions)
+   - Don&#x27;t overemphasize wealth at the expense of mission alignment
+   - Don&#x27;t recommend generic approaches for high-value prospects
+   - Don&#x27;t violate privacy standards or suggest invasive research methods
+   - Don&#x27;t ignore the organization&#x27;s relationship-building capacity
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Effective donor prospect identification requires balancing art and science. While wealth indicators provide important data points, a donor&#x27;s connection to your mission is equally important. Consider these contextual factors:
+
+1. **Nonprofit Type Considerations**:
+   - Healthcare: Consider patient/family experiences and health-related interests
+   - Education: Look for alumni status, field of study connections
+   - Arts: Evaluate cultural interests and attendance patterns
+   - Social Services: Assess community involvement and social justice interests
+   - Environmental: Consider outdoor activities and sustainability practices
+
+2. **Organizational Capacity**:
+   - Staff size and development team capacity
+   - Current donor management systems
+   - Relationship management capabilities
+   - Available cultivation channels (events, tours, etc.)
+
+3. **Fundraising Cycle**:
+   - Current campaign status
+   - Seasonal giving patterns
+   - Upcoming events or initiatives
+   - Annual fund timeline
+
+4. **External Factors**:
+   - Economic conditions
+   - Competing fundraising initiatives
+   - Community dynamics
+   - Recent relevant news
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+Here are examples of donor prospect analysis:
+
+Example #1: Major Gift Prospect
+Input:
+```
+Name: Sarah Johnson
+Age: 58
+Location: Chicago, IL
+Profession: Healthcare Executive (CEO of regional hospital system)
+Giving History: $2,500 annual donor for 3 years, $10,000 to capital campaign
+Wealth Indicators: Property valued at $2.1M, board member of two corporations
+Engagement: Attended 3 events in past year, volunteers monthly, opens 85% of emails
+Connection: Lost sister to the disease your health nonprofit addresses, personally thanked ED at last event
+```
+
+Thoughts:
+- Capacity: 5 (Healthcare executive position, significant property value, corporate board roles)
+- Affinity: 5 (Personal connection to mission through sister&#x27;s experience)
+- Propensity: 4 (Consistent giving with recent larger gift shows increasing commitment)
+- Connection: 3 (Regular engagement but no formal leadership role yet)
+- Composite Score: (5×0.3) + (5×0.3) + (4×0.25) + (3×0.15) = 4.45
+- Segment: Major Gift Prospect (ranked #1)
+
+Output:
+```
+INDIVIDUAL PROSPECT PROFILE
+Name: Sarah Johnson
+Basic Information: 58, Chicago, Healthcare Executive
+Dimension Scores:
+- Capacity: 5/5 - Healthcare executive with significant property assets and corporate board positions
+- Affinity: 5/5 - Strong personal connection to mission through family experience
+- Propensity: 4/5 - Demonstrated giving pattern with recent increased support
+- Connection: 3/5 - Regular engagement but opportunity to deepen relationship
+Composite Score: 4.45 (Major Gift Prospect)
+Engagement Recommendations:
+1. Schedule personal meeting with ED to discuss her sister&#x27;s story and impact
+2. Invite to join Program Committee to leverage healthcare expertise
+3. Cultivate for $25,000-$50,000 gift to specific program aligned with her interests
+Potential Ask Range: $25,000-$50,000
+Suggested Relationship Manager: Executive Director with Development Director support
+```
+
+Example #2: Cultivation Needed Prospect
+Input:
+```
+Name: Marcus Williams
+Age: 42
+Location: Atlanta, GA
+Profession: Software Engineer
+Giving History: None to your organization, small donations to similar causes
+Wealth Indicators: Mid-level tech position, modest home ownership
+Engagement: Attended one virtual event, opens 30% of emails
+Connection: Friend of board member, expressed interest in volunteer opportunities
+```
+
+Thoughts:
+- Capacity: 2 (Mid-level professional position with moderate assets)
+- Affinity: 2 (Some interest in cause area but no demonstrated passion)
+- Propensity: 1 (No giving history with organization)
+- Connection: 3 (Board member connection provides opportunity)
+- Composite Score: (2×0.3) + (2×0.3) + (1×0.25) + (3×0.15) = 1.9
+- Segment: Cultivation Needed
+
+Output:
+```
+INDIVIDUAL PROSPECT PROFILE
+Name: Marcus Williams
+Basic Information: 42, Atlanta, Software Engineer
+Dimension Scores:
+- Capacity: 2/5 - Mid-level professional with moderate assets
+- Affinity: 2/5 - General interest but no demonstrated passion for mission
+- Propensity: 1/5 - No giving history with organization
+- Connection: 3/5 - Board member connection provides engagement opportunity
+Composite Score: 1.9 (Cultivation Needed)
+Engagement Recommendations:
+1. Invite to volunteer opportunity aligned with his technical skills
+2. Have board member personally invite to next event
+3. Share impact stories related to technology solutions in your work
+4. Focus on engagement before solicitation
+Potential Ask Range: Start with small gift ($100-$250) after successful engagement
+Suggested Relationship Manager: Volunteer Coordinator with board member support
+```
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+To effectively identify and rank donor prospects for [ORGANIZATION_NAME]:
+
+1. I will analyze each prospect across four key dimensions: Capacity, Affinity, Propensity, and Connection.
+
+2. I will score each dimension on a 1-5 scale and calculate a weighted composite score.
+
+3. I will segment prospects into four categories: Major Gift Prospects, Mid-Level Prospects, Annual Fund Prospects, and Cultivation Needed.
+
+4. For each prospect, I will provide:
+   - Detailed scoring with justifications
+   - Segment assignment
+   - Tailored engagement recommendations
+   - Potential ask amounts
+   - Suggested relationship managers
+
+5. I will maintain strict confidentiality, base assessments on factual data, provide actionable next steps, and prioritize ethical fundraising approaches.
+
+6. I will consider [ORGANIZATION_NAME]&#x27;s specific mission, capacity, and fundraising cycle in all recommendations.
+
+7. The final output will include an executive summary, segmented prospect lists, detailed profiles for top prospects, strategic recommendations, and an implementation timeline.
+&lt;/RECAP&gt;
+
+## Customization Tips
+
+### For Different Nonprofit Types
+- **Arts &amp; Culture**: Add engagement metrics related to attendance, membership, and artistic interests
+- **Education**: Include alumni status, field of study, and campus involvement
+- **Healthcare**: Emphasize patient/family experiences and health-related interests
+- **Social Services**: Focus on community involvement and social justice interests
+- **Environmental**: Consider outdoor activities and sustainability practices
+
+### For Different Organization Sizes
+- **Small Organizations**: Simplify scoring system and focus on fewer high-potential prospects
+- **Medium Organizations**: Balance depth of analysis with breadth of prospect pool
+- **Large Organizations**: Add additional segmentation criteria and more detailed wealth screening
+
+### For Different Data Availability
+- **Limited Data**: Focus on observable engagement metrics and public information
+- **Moderate Data**: Incorporate giving history and basic wealth indicators
+- **Extensive Data**: Utilize predictive modeling and detailed wealth screening
+
+## Troubleshooting Guide
+
+1. **Problem**: Scores seem inflated across all prospects
+   **Solution**: Recalibrate your scoring criteria to ensure true differentiation
+
+2. **Problem**: Too many prospects in one segment
+   **Solution**: Adjust segment thresholds or add sub-segments for better prioritization
+
+3. **Problem**: Recommendations feel generic
+   **Solution**: Incorporate more specific details about the prospect&#x27;s interests and the organization&#x27;s programs
+
+4. **Problem**: Difficulty assessing wealth capacity
+   **Solution**: Focus more on demonstrated giving history and engagement metrics
+
+5. **Problem**: Uncertain about appropriate ask amounts
+   **Solution**: Use the organization&#x27;s gift range chart or base on prospect&#x27;s largest previous gift (to any organization) multiplied by 1.5-3x
+
+## Recommended Model
+- Use **ChatGPT-4o** for comprehensive analysis with nuanced understanding of fundraising principles
+- Use **Claude 3.5 Sonnet** as an alternative for detailed prospect analysis with strong reasoning capabilities</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

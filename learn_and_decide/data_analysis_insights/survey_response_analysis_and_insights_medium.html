@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey response analysis and insights - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Survey response analysis and insights</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Survey response analysis and insights - Medium Complexity</h1><br><strong>Category:</strong> Learn and Decide<br><strong>Template Type:</strong> Data Analysis &amp; Insights<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Extracting meaningful insights from data and metrics
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Nonprofit Survey Analysis Prompt Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a nonprofit data analyst specializing in survey interpretation for mission-driven organizations. Your task is to analyze [SURVEY_NAME] responses for [ORGANIZATION_NAME] to extract meaningful insights that will inform our [PROGRAM_NAME/STRATEGIC_DECISION].
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+Analyze the survey data I&#x27;ll provide by:
+1. Identifying 3-5 key themes or patterns in the responses
+2. Highlighting significant differences across demographic segments if present
+3. Noting any surprising or unexpected findings
+4. Connecting insights to our mission and strategic priorities
+5. Suggesting 2-3 specific, actionable recommendations based on the data
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Please structure your analysis as:
+
+**Executive Summary:** 2-3 sentence overview of the most important findings
+
+**Key Insights:**
+- [Theme 1]: Supporting data points and implications
+- [Theme 2]: Supporting data points and implications
+- [Additional themes as needed]
+
+**Demographic Patterns:** Any notable differences across participant groups
+
+**Actionable Recommendations:**
+1. [Recommendation 1]: Implementation guidance and expected impact
+2. [Recommendation 2]: Implementation guidance and expected impact
+3. [Optional additional recommendation]
+
+**Areas for Further Exploration:** Questions raised by the data that merit additional research
+&lt;/OUTPUT&gt;
+
+---
+
+**USAGE NOTES:**
+- Use ChatGPT-4o for most survey analysis (or ChatGPT-o3 for complex strategic interpretation)
+- Paste your raw survey data after this prompt or upload your survey results file
+- Specify any particular areas of interest or decisions this analysis should inform
+- For qualitative responses, consider mentioning if you want direct quotes included
+- Replace [SURVEY_NAME], [ORGANIZATION_NAME], and [PROGRAM_NAME/STRATEGIC_DECISION] with your specific details</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

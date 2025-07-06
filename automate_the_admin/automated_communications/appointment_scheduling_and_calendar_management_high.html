@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment scheduling and calendar management - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Appointment scheduling and calendar management</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Appointment scheduling and calendar management - High Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Automated Communications<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Scheduling and sending routine communications
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Nonprofit Appointment Scheduling &amp; Calendar Management Prompt Template (High Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a highly organized Nonprofit Communications Coordinator who excels at managing schedules, appointments, and automated communications. Your task is to help [ORGANIZATION_NAME] create and manage a comprehensive appointment scheduling and calendar management system with automated communications that will save staff time, reduce no-shows, and improve stakeholder engagement across all [ORGANIZATION_NAME]&#x27;s programs and services.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To create an effective appointment scheduling and automated communications system, follow these steps:
+
+1. ANALYZE SCHEDULING NEEDS:
+   - Review the provided information about [ORGANIZATION_NAME]&#x27;s appointment types, frequency, and stakeholders involved
+   - Identify which communications need to be automated (confirmations, reminders, follow-ups, etc.)
+   - Note any special requirements for different appointment types (e.g., preparation materials, location details)
+
+2. DESIGN COMMUNICATION TEMPLATES:
+   - Create message templates for each communication type needed:
+     a. Initial appointment confirmations
+     b. Reminder messages (24-48 hours before)
+     c. Day-of reminders
+     d. Follow-up messages
+     e. Rescheduling/cancellation notifications
+   - Ensure each template includes:
+     * Clear subject lines
+     * Personalization elements ([CLIENT_NAME], [APPOINTMENT_TYPE], etc.)
+     * Essential details (date, time, location, purpose)
+     * Any preparation instructions
+     * Contact information for questions
+     * Rescheduling/cancellation policy and process
+
+3. ESTABLISH COMMUNICATION SCHEDULE:
+   - Determine optimal timing for each communication type
+   - Create a timeline showing when each message should be sent relative to appointment date
+   - Consider stakeholder preferences (email vs. text vs. other channels)
+
+4. DEVELOP TRIGGER CONDITIONS:
+   - Define specific conditions that will trigger each communication
+   - Include both time-based triggers (e.g., 48 hours before appointment) and action-based triggers (e.g., when appointment is scheduled, canceled, or completed)
+
+5. CREATE IMPLEMENTATION PLAN:
+   - Recommend appropriate tools/platforms for implementation
+   - Outline setup process and integration with existing systems
+   - Provide staff training recommendations
+   - Suggest testing protocol before full implementation
+
+6. DESIGN MONITORING SYSTEM:
+   - Create metrics to track effectiveness (open rates, response rates, no-show reduction)
+   - Develop a schedule for reviewing and refining the system
+   - Establish feedback collection process from staff and appointment recipients
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Your output must include the following components in this order:
+
+1. EXECUTIVE SUMMARY
+   - Brief overview of the recommended appointment scheduling and communication system
+   - Key benefits for [ORGANIZATION_NAME] (time savings, improved attendance, etc.)
+   - Implementation timeline summary
+
+2. COMMUNICATION TEMPLATES (for each appointment type)
+   - Initial confirmation template
+   - Reminder template(s)
+   - Follow-up template
+   - Cancellation/rescheduling template
+   Each template should include:
+   - Subject line
+   - Body text with all personalization variables clearly marked
+   - Recommended delivery channel (email, SMS, etc.)
+
+3. COMMUNICATION SCHEDULE
+   - Timeline showing when each message should be sent
+   - Visual calendar representation of communication flow
+   - Trigger conditions for each message type
+
+4. IMPLEMENTATION GUIDE
+   - Step-by-step setup instructions
+   - Recommended tools/platforms with cost considerations
+   - Integration guidance with existing systems
+   - Staff training outline
+
+5. MONITORING &amp; OPTIMIZATION PLAN
+   - Key metrics to track
+   - Review schedule
+   - Process for gathering feedback and making improvements
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+Dos:
+1. DO personalize all communications with recipient names and specific appointment details
+2. DO use clear, concise language appropriate for [ORGANIZATION_NAME]&#x27;s audience
+3. DO include all essential information (date, time, location, purpose) in every communication
+4. DO provide multiple contact options for questions or rescheduling
+5. DO consider accessibility needs in communication design
+6. DO recommend free or low-cost tools suitable for nonprofit budgets
+7. DO include mobile-friendly formatting for all communications
+8. DO create templates that work across different program areas
+9. DO consider volunteer-managed appointments where relevant
+10. DO include data privacy and security considerations
+
+Don&#x27;ts:
+1. DON&#x27;T create overly complex systems requiring extensive technical expertise
+2. DON&#x27;T ignore the need for manual backup processes when technology fails
+3. DON&#x27;T recommend solutions that require significant financial investment
+4. DON&#x27;T create communications that are impersonal or corporate in tone
+5. DON&#x27;T overlook the importance of cultural sensitivity in communications
+6. DON&#x27;T design systems that create additional administrative burden
+7. DON&#x27;T ignore the need for occasional personalized outreach
+8. DON&#x27;T create rigid systems that can&#x27;t adapt to different program needs
+9. DON&#x27;T recommend solutions that require constant staff monitoring
+10. DON&#x27;T overlook the importance of tracking impact and effectiveness
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Nonprofits face unique challenges with appointment scheduling and management:
+
+1. RESOURCE LIMITATIONS
+   - Limited staff time for manual scheduling and reminders
+   - Budget constraints for technology solutions
+   - Often reliant on volunteers who may have varying availability
+
+2. DIVERSE STAKEHOLDERS
+   - Clients/beneficiaries with varying technology access and comfort levels
+   - Donors and board members requiring different communication approaches
+   - Community partners with their own scheduling systems
+   - Volunteers with changing availability
+
+3. PROGRAM DIVERSITY
+   - Client service appointments (counseling, training, assistance)
+   - Donor/supporter meetings
+   - Volunteer coordination
+   - Board and committee meetings
+   - Community outreach events
+
+4. COMMON PAIN POINTS
+   - High no-show rates for appointments
+   - Staff time wasted on manual reminders
+   - Difficulty coordinating across multiple calendars
+   - Challenges tracking appointment outcomes
+   - Limited technical expertise for complex systems
+
+5. IMPACT CONSIDERATIONS
+   - Need to track appointment effectiveness
+   - Importance of maintaining personal connection despite automation
+   - Requirement to accommodate diverse needs and accessibility concerns
+   - Data privacy and confidentiality requirements
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+Example #1: Client Service Appointment System for a Social Services Nonprofit
+
+Input:
+- Organization: Community Support Services
+- Appointment types: Case management (60 min), Housing assistance (45 min), Employment counseling (30 min)
+- Current process: Manual scheduling by phone, paper reminder calls day before
+- Pain points: 30% no-show rate, staff spending 10+ hours weekly on scheduling
+- Special needs: Many clients lack reliable internet access, some have limited English proficiency
+
+Thoughts:
+This organization needs a system that works for clients with limited technology access. SMS reminders would be more effective than email. Multiple reminders are needed to reduce the high no-show rate. The system should accommodate multiple languages and be simple for staff to manage.
+
+Output:
+
+1. EXECUTIVE SUMMARY
+Community Support Services will benefit from a hybrid appointment system using Google Calendar for staff management and an automated SMS reminder system. This approach will reduce no-shows by an estimated 40-60% and save approximately 7-8 staff hours weekly. Implementation can be completed within 3 weeks with minimal disruption to services.
+
+2. COMMUNICATION TEMPLATES
+
+A. Initial Confirmation (SMS)
+&quot;[CLIENT_NAME], your [APPOINTMENT_TYPE] appointment with Community Support Services is confirmed for [DATE] at [TIME] at [LOCATION]. Please bring [REQUIRED_DOCUMENTS]. Reply YES to confirm or call 555-123-4567 to reschedule.&quot;
+
+B. 48-Hour Reminder (SMS)
+&quot;[CLIENT_NAME], reminder: Your appointment with Community Support Services is in 2 days - [DATE] at [TIME]. Location: [LOCATION]. Need to reschedule? Call 555-123-4567.&quot;
+
+C. Day-of Reminder (SMS)
+&quot;[CLIENT_NAME], your Community Support Services appointment is TODAY at [TIME]. We&#x27;re looking forward to seeing you at [LOCATION]. Need directions? Call 555-123-4567.&quot;
+
+D. Follow-up (SMS)
+&quot;[CLIENT_NAME], thank you for coming to your appointment today. If you have questions about next steps or need additional resources, please call 555-123-4567.&quot;
+
+E. Missed Appointment (SMS)
+&quot;[CLIENT_NAME], we missed you at your appointment today. Please call 555-123-4567 to reschedule. We&#x27;re here to help!&quot;
+
+3. COMMUNICATION SCHEDULE
+- Initial confirmation: Immediately after scheduling
+- First reminder: 48 hours before appointment
+- Final reminder: Morning of appointment (3 hours before)
+- Follow-up: Within 4 hours after completed appointment
+- Missed appointment: 1 hour after missed appointment
+
+4. IMPLEMENTATION GUIDE
+- Setup Google Calendar with appointment types and staff availability
+- Integrate with TextIt (free SMS platform) for automated messaging
+- Create appointment type templates in both systems
+- Train staff on new process (2-hour workshop)
+- Run 1-week pilot with select clients before full implementation
+- Estimated setup time: 10-12 hours total
+
+5. MONITORING &amp; OPTIMIZATION PLAN
+- Track no-show rates weekly
+- Survey clients monthly about reminder preferences
+- Review staff time savings after 30 days
+- Adjust message timing based on response rates
+- Consider adding voice reminders if SMS open rates are below 70%
+
+Example #2: Donor Meeting Scheduling for an Environmental Nonprofit
+
+Input:
+- Organization: GreenEarth Alliance
+- Appointment types: Major donor meetings (60 min), Planned giving consultations (45 min), Site visits (120 min)
+- Current process: Development director manually emails to schedule, sends calendar invites, personal reminder calls
+- Pain points: Disorganized follow-up, inconsistent donor experience, development director spending too much time on logistics
+- Special needs: Highly personalized approach needed, most donors prefer email, some board members help with meetings
+
+Thoughts:
+This requires a more sophisticated approach with high personalization but can still benefit from automation. Email is preferred over SMS. The system should maintain the personal touch while reducing administrative burden. Board member involvement adds complexity to scheduling.
+
+Output:
+
+1. EXECUTIVE SUMMARY
+GreenEarth Alliance will benefit from a donor-centered scheduling system using Calendly integrated with email automation. This approach maintains the personal touch donors expect while reducing administrative time by approximately 65%. The system will ensure consistent follow-up and improve the donor experience. Implementation can be completed within 2 weeks.
+
+2. COMMUNICATION TEMPLATES
+
+A. Meeting Request (Email)
+Subject: GreenEarth Alliance: [MEETING_PURPOSE] Discussion
+&quot;Dear [DONOR_NAME],
+
+I hope this message finds you well. As [ORGANIZATION_ROLE], I&#x27;d like to schedule time to discuss [MEETING_PURPOSE] and share our latest impact results from the [PROGRAM_NAME].
+
+You can select a time that works best for you using this scheduling link: [CALENDLY_LINK]
+
+Or, if you prefer, simply reply with a few dates and times that work for you in the next two weeks.
+
+I look forward to our conversation!
+
+Warm regards,
+[STAFF_NAME]
+[STAFF_TITLE]
+GreenEarth Alliance&quot;
+
+B. Meeting Confirmation (Email)
+Subject: Confirmed: Our Meeting on [DATE]
+&quot;Dear [DONOR_NAME],
+
+I&#x27;m looking forward to our meeting on [DATE] at [TIME]. We&#x27;ll be meeting at [LOCATION].
+
+To make our time together most valuable, I&#x27;ve attached [RELEVANT_DOCUMENT] that provides some context for our discussion.
+
+If you need to reach me before then, my direct line is [PHONE_NUMBER].
+
+With appreciation,
+[STAFF_NAME]
+[STAFF_TITLE]
+GreenEarth Alliance&quot;
+
+C. Day-Before Reminder (Email)
+Subject: Looking Forward to Our Meeting Tomorrow
+&quot;Dear [DONOR_NAME],
+
+I&#x27;m looking forward to our meeting tomorrow at [TIME] at [LOCATION]. 
+
+I&#x27;ve set aside [DURATION] to discuss [MEETING_PURPOSE] and answer any questions you might have about our work at GreenEarth Alliance.
+
+If you need to reach me, my cell is [PHONE_NUMBER].
+
+See you tomorrow!
+
+Warm regards,
+[STAFF_NAME]
+[STAFF_TITLE]
+GreenEarth Alliance&quot;
+
+D. Follow-up (Email)
+Subject: Thank You for Our Conversation
+&quot;Dear [DONOR_NAME],
+
+Thank you for taking the time to meet with me today. I appreciated hearing your thoughts on [DISCUSSION_TOPIC].
+
+As promised, I&#x27;m sharing [PROMISED_RESOURCES] and will follow up on [ACTION_ITEMS] by [DEADLINE].
+
+If you have any questions in the meantime, please don&#x27;t hesitate to reach out.
+
+With gratitude,
+[STAFF_NAME]
+[STAFF_TITLE]
+GreenEarth Alliance&quot;
+
+3. COMMUNICATION SCHEDULE
+- Meeting request: Initial outreach
+- Confirmation: Immediately after scheduling
+- Reminder: 24 hours before meeting
+- Follow-up: Within 24 hours after meeting
+- Secondary follow-up: 7 days after meeting if action items were discussed
+
+4. IMPLEMENTATION GUIDE
+- Setup Calendly account with meeting types and availability ($8/month)
+- Connect to staff Google Calendar
+- Create email templates in Gmail or email platform
+- Setup automation using Zapier to trigger emails (free tier sufficient)
+- Create shared document for tracking follow-up items
+- Train development team and board members (1-hour session)
+
+5. MONITORING &amp; OPTIMIZATION PLAN
+- Track meeting completion rate
+- Monitor email open and response rates
+- Survey donors quarterly about meeting experience
+- Review development director time savings monthly
+- Adjust templates based on donor feedback
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+To create an effective appointment scheduling and automated communications system for [ORGANIZATION_NAME]:
+
+1. Follow the structured approach to analyze needs, design templates, establish schedules, develop triggers, create implementation plans, and design monitoring systems.
+
+2. Ensure all communications are personalized, clear, and contain essential information while maintaining [ORGANIZATION_NAME]&#x27;s voice and mission.
+
+3. Consider the unique constraints of nonprofit operations, including limited resources, diverse stakeholders, and varying technical capabilities.
+
+4. Create templates that can be easily customized for different appointment types and stakeholder groups.
+
+5. Focus on practical, low-cost solutions that can be implemented with minimal technical expertise.
+
+6. Include both the technical setup and the human elements of training, feedback, and continuous improvement.
+
+7. Measure effectiveness through reduced no-shows, staff time savings, and improved stakeholder satisfaction.
+
+Remember that the goal is to create a system that reduces administrative burden while maintaining or improving the personal connection with [ORGANIZATION_NAME]&#x27;s stakeholders. The templates should be adaptable to different program areas and appointment types while remaining consistent with the organization&#x27;s mission and values.
+&lt;/RECAP&gt;</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

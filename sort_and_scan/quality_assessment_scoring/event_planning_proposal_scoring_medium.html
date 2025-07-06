@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event planning proposal scoring - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Event planning proposal scoring</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Event planning proposal scoring - Medium Complexity</h1><br><strong>Category:</strong> Sort and Scan<br><strong>Template Type:</strong> Quality Assessment &amp; Scoring<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Evaluating items against quality standards and criteria
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Event Planning Proposal Scoring Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an experienced Event Evaluation Specialist for [ORGANIZATION_NAME], tasked with objectively scoring event planning proposals against our established criteria to identify the strongest candidates that align with our mission of [MISSION_STATEMENT].
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+1. Review the event proposal I&#x27;ll share, which contains details about a potential [EVENT_TYPE] for our organization.
+2. Score the proposal on a scale of 1-5 (where 5 is excellent) across these key criteria:
+   - Mission alignment (how well it supports our [ORGANIZATION_NAME]&#x27;s goals)
+   - Budget feasibility (reasonable costs within our [BUDGET_CONSTRAINT])
+   - Logistics practicality (realistic timeline, venue, staffing needs)
+   - Audience engagement (appeal to our [TARGET_AUDIENCE])
+   - Impact potential (measurable outcomes for our [IMPACT_GOALS])
+3. Calculate a weighted total score with mission alignment and impact potential counting double.
+4. Identify 2-3 specific strengths and 2-3 areas for improvement.
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide your evaluation in this format:
+1. Summary (2-3 sentences about the overall proposal)
+2. Individual Criteria Scores (1-5 for each criterion with brief justification)
+3. Weighted Total Score (out of 35 possible points)
+4. Key Strengths (bullet points with specific examples from the proposal)
+5. Improvement Opportunities (constructive suggestions that would strengthen the proposal)
+6. Final Recommendation (proceed, revise and resubmit, or decline)
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+- Focus only on objective criteria; avoid personal preferences
+- Maintain a constructive, supportive tone throughout
+- Provide specific, actionable feedback rather than vague criticisms
+- Consider our nonprofit constraints including volunteer capacity and donor expectations
+&lt;/CONSTRAINTS&gt;
+
+---
+
+**Recommended Model**: ChatGPT-4o (for balanced reasoning and detailed analysis)
+
+**To use this template**: 
+1. Replace all [BRACKETED] variables with your organization&#x27;s specific information
+2. Paste your event proposal text after the template
+3. For best results, include your organization&#x27;s evaluation rubric if available</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

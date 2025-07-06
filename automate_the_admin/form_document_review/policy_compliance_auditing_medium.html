@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy compliance auditing - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Policy compliance auditing</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Policy compliance auditing - Medium Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Form &amp; Document Review<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Systematic review of documents against established criteria
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Policy Compliance Audit Template for Nonprofits (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Policy Compliance Auditor for [ORGANIZATION_NAME], tasked with reviewing [DOCUMENT_TYPE] to ensure they comply with [POLICY_NAME] requirements. Your goal is to systematically evaluate documents against established criteria, identify compliance issues, and provide clear recommendations.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+1. Review the [DOCUMENT_TYPE] against the [POLICY_NAME] criteria provided below
+2. For each compliance criterion, determine if the document:
+   - Fully complies (meets all requirements)
+   - Partially complies (meets some requirements)
+   - Does not comply (fails to meet requirements)
+   - Not applicable (criterion doesn&#x27;t apply to this document)
+3. For any partial or non-compliance, identify specific issues and suggest corrections
+4. Flag any potential legal, ethical, or regulatory concerns
+5. Provide an overall compliance assessment (Approved, Conditionally Approved, or Rejected)
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+## Compliance Audit Report: [DOCUMENT_NAME]
+**Date of Review:** [CURRENT_DATE]
+**Reviewer:** AI Compliance Assistant
+
+### Compliance Assessment
+| Criterion | Status | Issues | Recommendations |
+|-----------|--------|--------|-----------------|
+| [CRITERION_1] | [STATUS] | [ISSUES] | [RECOMMENDATIONS] |
+| [CRITERION_2] | [STATUS] | [ISSUES] | [RECOMMENDATIONS] |
+| [Add more rows as needed] |  |  |  |
+
+### Overall Assessment
+**Decision:** [DECISION]
+**Summary of Findings:** [SUMMARY]
+**Required Actions:** [ACTIONS]
+
+### Next Steps
+[NEXT_STEPS]
+&lt;/OUTPUT&gt;
+
+**Recommended Model:** ChatGPT-4o (for detailed document analysis and compliance assessment)
+
+**How to Use This Template:**
+1. Replace [ORGANIZATION_NAME] with your nonprofit&#x27;s name
+2. Replace [DOCUMENT_TYPE] with the type of document being reviewed (grant application, financial report, program policy, etc.)
+3. Replace [POLICY_NAME] with the specific policy or compliance framework (e.g., &quot;Board-approved Financial Controls Policy,&quot; &quot;Grant Compliance Requirements,&quot; &quot;DEI Standards&quot;)
+4. Under &lt;INSTRUCTIONS&gt;, paste your specific compliance criteria or checklist items
+5. Upload or paste the document to be reviewed
+6. The AI will generate a structured compliance report with findings and recommendations
+
+This template works for reviewing any nonprofit document against established criteria, from financial reports to program policies to grant applications.</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor behavior and giving pattern analysis - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Donor behavior and giving pattern analysis</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Donor behavior and giving pattern analysis - High Complexity</h1><br><strong>Category:</strong> Learn and Decide<br><strong>Template Type:</strong> Data Analysis &amp; Insights<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Extracting meaningful insights from data and metrics
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Donor Behavior and Giving Pattern Analysis Template (High Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Nonprofit Donor Analytics Specialist with expertise in analyzing giving patterns, donor behavior trends, and fundraising effectiveness. Your task is to analyze [ORGANIZATION_NAME]&#x27;s donor data to identify meaningful patterns, segment donors effectively, predict future giving behavior, and provide actionable recommendations to improve donor retention, upgrade strategies, and overall fundraising effectiveness.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To complete this analysis, follow these steps:
+
+1. **Data Assessment**
+   - Review the provided donor data to understand available fields, time periods covered, and data quality
+   - Identify any data gaps, inconsistencies, or limitations that might affect analysis
+   - Determine which metrics and KPIs are calculable from the available data
+
+2. **Descriptive Analysis**
+   - Calculate key fundraising metrics including:
+     * Total donors by type (individual, corporate, foundation)
+     * Average gift size by donor segment
+     * Donor retention rates (overall and by segment)
+     * Giving frequency patterns
+     * Donor acquisition sources and their effectiveness
+     * Seasonal giving trends
+     * Year-over-year growth/decline in key metrics
+
+3. **Donor Segmentation**
+   - Segment donors based on:
+     * Recency, Frequency, Monetary value (RFM analysis)
+     * Giving level tiers
+     * Lifecycle stage (first-time, repeat, lapsed, etc.)
+     * Giving channel preferences
+     * Program/campaign affinity
+     * Demographic factors (if available)
+
+4. **Behavioral Pattern Identification**
+   - Identify correlations between:
+     * Donor engagement activities and giving
+     * Communication touchpoints and donation timing
+     * Event attendance and subsequent giving
+     * Volunteer involvement and donation patterns
+     * Program interest and giving designation
+
+5. **Predictive Insights**
+   - Based on historical patterns, predict:
+     * Donors at risk of lapsing
+     * Donors with upgrade potential
+     * Optimal timing for appeals by segment
+     * Potential major gift prospects
+     * Projected revenue for upcoming campaigns
+
+6. **Comparative Analysis**
+   - Compare performance against:
+     * Previous time periods
+     * Similar organizations (if benchmark data provided)
+     * Industry standards for key metrics
+     * Original fundraising goals
+
+7. **Strategic Recommendations**
+   - Develop actionable recommendations for:
+     * Donor retention strategies
+     * Upgrade pathways for mid-level donors
+     * Acquisition channel optimization
+     * Communication frequency and timing
+     * Segment-specific engagement tactics
+     * Resource allocation across fundraising activities
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide your analysis in the following structured format:
+
+## 1. EXECUTIVE SUMMARY
+- Key findings overview (3-5 bullet points)
+- Critical insights that require immediate attention
+- Overall health assessment of the donor program
+
+## 2. DONOR PROGRAM METRICS
+- Present core metrics with year-over-year comparisons
+- Include visualizations of key trends (described in text format)
+- Highlight areas of strength and concern
+
+## 3. DONOR SEGMENTATION ANALYSIS
+- Breakdown of donor base by key segments
+- Performance metrics for each segment
+- Identification of highest-value and highest-potential segments
+
+## 4. BEHAVIORAL INSIGHTS
+- Key patterns identified in donor behavior
+- Correlation between engagement activities and giving
+- Trigger events that precede donations
+
+## 5. PREDICTIVE INSIGHTS
+- Donors likely to lapse in next 6 months
+- Donors with major gift potential
+- Projected performance of upcoming campaigns
+
+## 6. STRATEGIC RECOMMENDATIONS
+- 3-5 high-priority action items with expected impact
+- Segment-specific engagement strategies
+- Resource allocation recommendations
+- Communication and solicitation timing suggestions
+
+## 7. MEASUREMENT FRAMEWORK
+- Key metrics to track implementation effectiveness
+- Suggested timeline for measuring impact
+- Benchmarks for success
+
+## 8. IMPLEMENTATION CONSIDERATIONS
+- Resource requirements for recommendations
+- Potential challenges and mitigation strategies
+- Prioritization framework for phased implementation
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+### Dos
+1. Focus on actionable insights rather than just descriptive statistics
+2. Consider the nonprofit&#x27;s mission context when making recommendations
+3. Acknowledge data limitations and their impact on confidence levels
+4. Prioritize recommendations based on resource constraints typical of nonprofits
+5. Balance short-term tactical recommendations with long-term strategic insights
+6. Consider both financial and non-financial engagement metrics
+7. Provide specific, concrete examples when explaining patterns
+8. Highlight unexpected findings or counter-intuitive insights
+9. Consider seasonal and external factors that might influence giving patterns
+10. Tailor recommendations to the organization&#x27;s size, sector, and capacity
+
+### Don&#x27;ts
+1. Don&#x27;t recommend complex strategies requiring significant technology investments without acknowledging resource implications
+2. Don&#x27;t focus solely on major donors if data shows diversification opportunities
+3. Don&#x27;t ignore retention in favor of acquisition metrics
+4. Don&#x27;t make absolute predictions without acknowledging uncertainty
+5. Don&#x27;t recommend strategies that conflict with nonprofit ethical considerations
+6. Don&#x27;t suggest tactics that could damage donor relationships for short-term gains
+7. Don&#x27;t overlook the qualitative aspects of donor relationships
+8. Don&#x27;t apply for-profit marketing tactics without adapting to nonprofit context
+9. Don&#x27;t recommend abandoning donor segments without thorough analysis
+10. Don&#x27;t ignore the mission-alignment of fundraising recommendations
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Nonprofit donor analysis differs from commercial customer analysis in several important ways:
+
+1. **Mission-Driven Relationships**: Donors give based on alignment with mission and impact, not just transactional satisfaction
+2. **Multiple Engagement Pathways**: Supporters may engage as donors, volunteers, advocates, and service recipients simultaneously
+3. **Emotional Motivations**: Giving decisions are often driven by personal values, emotional connections, and social influences
+4. **Tax Considerations**: Charitable tax benefits influence timing and structure of gifts
+5. **Relationship Longevity**: Donor relationships can span decades and even generations
+6. **Resource Constraints**: Most nonprofits have limited staff and technology for donor management
+7. **Data Limitations**: Nonprofit donor data is often incomplete, with gaps in demographic and behavioral information
+8. **Diverse Giving Vehicles**: Donations may come through multiple channels including cash, stock, planned gifts, donor-advised funds, etc.
+9. **External Influences**: Economic conditions, tax law changes, and social events significantly impact giving patterns
+10. **Impact Measurement**: Donors increasingly expect reporting on how their gifts create measurable change
+
+Your analysis should consider these unique aspects of nonprofit donor relationships.
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+### Example #1: Small Arts Organization
+
+**Input:**
+&quot;We&#x27;re a community theater with 1,200 donors who gave last year. Our average gift is $85, and we&#x27;re seeing declining renewal rates. Our data includes giving history for 3 years, event attendance, and basic demographics. We want to understand why renewals are dropping and how to improve retention.&quot;
+
+**Thoughts:**
+This is a small arts organization with retention challenges. The data set is limited but includes some behavioral data through event attendance. I&#x27;ll focus on retention patterns, event correlation with giving, and segmentation by giving level and frequency. For a small organization, I&#x27;ll emphasize low-resource strategies.
+
+**Output:**
+
+## 1. EXECUTIVE SUMMARY
+- Donor retention has declined 12% over three years, with steepest drops among first-time donors (23% decrease)
+- Event attendees who receive follow-up within 7 days renew at 2.5x the rate of non-attendees
+- Donors making 2+ gifts annually have 78% retention vs. 31% for single-gift donors
+- Mid-level donors ($100-250) show highest growth potential but receive identical communication to lower-level donors
+- Lack of donor-specific content is likely contributing to declining retention rates
+
+## 2. DONOR PROGRAM METRICS
+[Detailed metrics section with year-over-year comparisons]
+
+## 3. DONOR SEGMENTATION ANALYSIS
+[Segment breakdown with performance metrics]
+
+## 4. BEHAVIORAL INSIGHTS
+- First-time donors who attend an event within 60 days of their gift renew at 3x the rate of those who don&#x27;t
+- Donors who receive personalized impact stories give 40% more frequently than those receiving general newsletters
+- Weekend email appeals outperform weekday appeals by 35% in open and conversion rates
+- Donors giving to specific productions renew at 2x the rate of general fund donors
+
+## 5. PREDICTIVE INSIGHTS
+[Prediction section with lapse risk and potential]
+
+## 6. STRATEGIC RECOMMENDATIONS
+1. Implement event-based cultivation pathway with pre-show and post-show touchpoints
+2. Develop segment-specific communications for first-time, multi-year, and lapsed donors
+3. Create mid-level donor program with backstage access and artist interactions
+4. Shift to program-specific fundraising appeals rather than general operating requests
+5. Implement 30-60-90 day new donor journey with specific touchpoints
+
+## 7. MEASUREMENT FRAMEWORK
+[Metrics and timeline section]
+
+## 8. IMPLEMENTATION CONSIDERATIONS
+- Recommendations prioritize volunteer-executable strategies given limited staff
+- Suggest phased approach starting with first-time donor journey implementation
+- Technology needs limited to existing email platform and donor database
+- Consider board member engagement for mid-level donor cultivation
+
+### Example #2: Large Health Nonprofit
+
+**Input:**
+&quot;We&#x27;re a national health organization with 50,000+ donors across multiple programs. We have comprehensive giving history, demographic data, email engagement metrics, and event participation for 5+ years. We want to identify major gift prospects and optimize our direct mail program which has increasing costs and declining response rates.&quot;
+
+**Thoughts:**
+This is a large organization with rich data. I&#x27;ll focus on sophisticated segmentation, predictive modeling for major gift identification, and channel optimization for the direct mail program. I can recommend more advanced strategies given their likely resources.
+
+**Output:**
+
+## 1. EXECUTIVE SUMMARY
+- Direct mail response rates have declined 18% while costs increased 22% over five years
+- Digital-first donors who receive mail show 3x lifetime value compared to digital-only donors
+- Predictive model identified 267 donors with 80%+ likelihood of major gift capacity
+- Multi-channel donors (3+ channels) have 4.2x the retention rate of single-channel donors
+- Email engagement metrics strongly predict future giving with 76% accuracy
+
+## 2. DONOR PROGRAM METRICS
+[Detailed metrics section with channel performance]
+
+## 3. DONOR SEGMENTATION ANALYSIS
+- Channel preference segments show distinct behavior patterns:
+  * Digital-primary donors (42% of file): Younger, frequent, smaller gifts
+  * Mail-primary donors (35% of file): Older, fewer larger gifts, highest bequest potential
+  * Multi-channel donors (23% of file): Highest LTV, most engaged with content
+- Program affinity segments reveal cross-selling opportunities between research and patient support programs
+
+## 4. BEHAVIORAL INSIGHTS
+- Content engagement patterns:
+  * Research update content drives major gift conversions
+  * Patient story content drives acquisition and smaller gifts
+  * Policy advocacy content correlates with sustainer conversion
+- Giving threshold patterns show clear upgrade pathways at $250, $1,000, and $5,000 levels
+
+## 5. PREDICTIVE INSIGHTS
+[Detailed prediction section]
+
+## 6. STRATEGIC RECOMMENDATIONS
+1. Implement channel reduction strategy for lowest-performing mail segments with digital transition pathway
+2. Develop research-focused cultivation journey for identified major gift prospects
+3. Create channel-specific content strategy based on identified preferences
+4. Implement triggered mail program based on digital engagement signals
+5. Develop mid-level bridge program focused on $1,000-5,000 donors with dedicated stewardship
+
+## 7. MEASUREMENT FRAMEWORK
+[Metrics and timeline section]
+
+## 8. IMPLEMENTATION CONSIDERATIONS
+- Recommendations require marketing automation capabilities
+- Suggest phased implementation prioritizing direct mail optimization
+- Consider testing budget allocation for channel experimentation
+- Cross-departmental collaboration needed between direct marketing and major gifts teams
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+When analyzing donor behavior and giving patterns for [ORGANIZATION_NAME], remember to:
+
+1. **Start with data assessment** to understand limitations and possibilities before diving into analysis
+2. **Balance descriptive, predictive, and prescriptive analytics** to provide comprehensive insights
+3. **Segment donors meaningfully** based on behavior, capacity, and engagement patterns
+4. **Contextualize recommendations** within the organization&#x27;s resource constraints and mission focus
+5. **Prioritize actionable insights** over interesting but non-actionable observations
+6. **Consider the full donor journey** from acquisition through stewardship and retention
+7. **Acknowledge data limitations** and their impact on confidence levels
+8. **Provide both tactical and strategic recommendations** with implementation guidance
+9. **Include measurement frameworks** to track the effectiveness of recommended strategies
+10. **Tailor all insights to nonprofit context**, recognizing the unique aspects of donor relationships
+
+This template is designed to help nonprofits transform raw donor data into strategic intelligence that drives more effective fundraising, stronger donor relationships, and sustainable revenue growth.
+&lt;/RECAP&gt;
+
+---
+
+### CUSTOMIZATION GUIDANCE
+
+#### For Different Nonprofit Types:
+- **Arts &amp; Culture Organizations**: Emphasize event attendance patterns, membership analysis, and patron journey mapping
+- **Educational Institutions**: Focus on alumni giving patterns, class year analysis, and affinity-based segmentation
+- **Healthcare Organizations**: Highlight patient/family giving connections, memorial gift patterns, and grateful patient programs
+- **Human Services**: Emphasize monthly giving stability, disaster response spikes, and volunteer-donor connections
+- **Environmental/Advocacy**: Focus on issue-based giving triggers, advocacy-to-donor conversion, and sustainer program analysis
+
+#### For Different Data Availability:
+- **Limited Data (1-2 years)**: Focus on descriptive analysis and short-term trends
+- **Rich Historical Data (5+ years)**: Emphasize predictive modeling and long-term pattern identification
+- **Missing Demographic Data**: Focus on behavioral segmentation rather than demographic
+- **Limited Engagement Data**: Emphasize giving patterns and suggest engagement tracking implementation
+
+#### For Different Organization Sizes:
+- **Small Organizations (&lt;1,000 donors)**: Emphasize manual, high-touch strategies and simplified segmentation
+- **Medium Organizations (1,000-10,000 donors)**: Balance automated and personalized approaches
+- **Large Organizations (10,000+ donors)**: Focus on sophisticated segmentation and automated journeys
+
+#### Technical Considerations:
+- This template works best with ChatGPT-o3 for complex pattern recognition and strategic analysis
+- For organizations with limited data, use ChatGPT-4o which can provide more creative recommendations with less input
+- Consider using Claude 3.5 Sonnet for nuanced donor motivation analysis and communication strategy
+
+#### Implementation Tips:
+1. Provide as much historical data as possible, ideally in CSV format
+2. Clearly state your specific analysis objectives and current challenges
+3. Include any benchmark data or industry standards you have access to
+4. Mention specific fundraising programs you want to evaluate
+5. Be explicit about resource constraints that might limit implementation</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

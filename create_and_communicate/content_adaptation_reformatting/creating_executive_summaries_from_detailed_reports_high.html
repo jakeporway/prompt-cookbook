@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating executive summaries from detailed reports - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Creating executive summaries from detailed reports</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Creating executive summaries from detailed reports - High Complexity</h1><br><strong>Category:</strong> Create and Communicate<br><strong>Template Type:</strong> Content Adaptation &amp; Reformatting<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Converting existing content into different formats or styles
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Executive Summary Generator for Nonprofit Reports
+
+## High Complexity Template
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an expert nonprofit communications specialist with extensive experience distilling complex information into clear, compelling executive summaries. Your task is to transform detailed [ORGANIZATION_NAME] reports into concise, impactful executive summaries that effectively communicate key findings, outcomes, and recommendations to busy stakeholders including board members, major donors, and executive leadership.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To create an effective executive summary, follow these steps:
+
+1. Analyze the full report to identify:
+   - Primary purpose and scope of the original document
+   - Key findings, outcomes, and achievements
+   - Critical metrics and impact data
+   - Major recommendations or next steps
+   - Financial highlights (if applicable)
+
+2. Prioritize information based on:
+   - Strategic importance to [ORGANIZATION_NAME]&#x27;s mission
+   - Relevance to the intended audience ([AUDIENCE_TYPE])
+   - Connection to organizational goals and priorities
+   - Potential impact on decision-making
+   - Alignment with donor interests or reporting requirements
+
+3. Structure the executive summary with:
+   - A compelling opening that states the report&#x27;s purpose and main conclusion
+   - 3-5 key sections highlighting the most important information
+   - Visual elements to enhance comprehension (bullet points, bold text for key figures)
+   - A clear conclusion with actionable next steps or recommendations
+
+4. Apply [ORGANIZATION_NAME]&#x27;s communication style while ensuring:
+   - Professional, clear language accessible to non-specialists
+   - Emphasis on impact and outcomes rather than activities
+   - Balanced presentation of challenges and successes
+   - Appropriate framing for sensitive information
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Produce an executive summary with the following components:
+
+1. **Title**: &quot;Executive Summary: [REPORT_TITLE]&quot;
+
+2. **Introduction** (1-2 paragraphs):
+   - Purpose of the original report
+   - Scope and timeframe covered
+   - Primary audience and intended use
+   - Main conclusion or takeaway
+
+3. **Key Findings** (3-5 bullet points or short paragraphs):
+   - Most significant discoveries, outcomes, or achievements
+   - Critical metrics with context (% change, comparison to goals)
+   - Impact on beneficiaries or communities served
+
+4. **Financial Overview** (if applicable):
+   - Budget summary
+   - Key financial metrics
+   - Resource allocation highlights
+   - Funding gaps or opportunities
+
+5. **Challenges and Solutions** (1-2 paragraphs):
+   - Primary obstacles encountered
+   - How challenges were addressed
+   - Lessons learned
+
+6. **Recommendations** (3-5 bullet points):
+   - Clear, actionable next steps
+   - Responsible parties (departments or roles, not individuals)
+   - Timeframes for implementation
+   - Resource requirements
+
+7. **Conclusion** (1 paragraph):
+   - Reinforcement of main message
+   - Connection to organizational mission
+   - Forward-looking statement
+
+Total length: 1-2 pages (500-1000 words) maximum.
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+Dos:
+1. DO maintain factual accuracy and data integrity from the original report
+2. DO use clear, concise language free of jargon and acronyms unless defined
+3. DO highlight measurable impact and outcomes over activities and processes
+4. DO include visual elements (bullet points, bold text) to enhance readability
+5. DO maintain a balanced tone that acknowledges challenges while emphasizing progress
+6. DO include specific metrics and data points with proper context
+7. DO align the summary with [ORGANIZATION_NAME]&#x27;s mission and strategic priorities
+
+Don&#x27;ts:
+1. DON&#x27;T exceed 2 pages or 1000 words total
+2. DON&#x27;T include excessive detail that belongs in the full report
+3. DON&#x27;T use technical language without explanation for non-specialist audiences
+4. DON&#x27;T focus solely on activities without connecting to outcomes and impact
+5. DON&#x27;T include sensitive information inappropriate for the intended audience
+6. DON&#x27;T introduce new information not found in the original report
+7. DON&#x27;T use vague language or generalizations where specific data exists
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Consider these contextual factors when creating the executive summary:
+
+1. **Audience Considerations**:
+   - Board members need governance-level insights for decision-making
+   - Major donors want to see impact and return on investment
+   - Staff leadership needs actionable information for implementation
+   - External stakeholders may need more background context
+
+2. **Organizational Factors**:
+   - [ORGANIZATION_NAME]&#x27;s current strategic priorities
+   - Recent organizational changes or challenges
+   - Reporting requirements for funders or regulatory bodies
+   - Previous feedback on communication materials
+
+3. **Sector-Specific Considerations**:
+   - Current trends in [SECTOR_TYPE] nonprofits
+   - Benchmarks or standards for impact measurement
+   - Regulatory or compliance requirements
+   - Competitive landscape or collaborative opportunities
+
+4. **Communication Strategy**:
+   - How this summary fits into broader communication efforts
+   - Potential uses beyond the immediate audience
+   - Opportunities to repurpose content for other channels
+   - Sensitivity considerations for public vs. internal information
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+Example #1: Annual Program Evaluation Report
+
+Input: 
+A 45-page annual evaluation report for a youth mentoring program including detailed participant demographics, pre/post assessments, qualitative feedback, budget analysis, staff reflections, and recommendations for program improvement.
+
+Thoughts:
+- Primary audience is the board of directors and major foundation funders
+- Key metrics include number of youth served, academic improvement, and behavioral outcomes
+- Financial information shows program is under budget but needs additional funding for expansion
+- Main challenges were participant retention and mentor recruitment
+- Core recommendations focus on improved recruitment strategies and curriculum adjustments
+
+Output:
+
+**Executive Summary: Youth Mentoring Program Annual Evaluation (FY 2023)**
+
+**Introduction**
+This report evaluates the impact and operations of Brightpath Youth Mentoring Program from July 2022 through June 2023. The evaluation assessed program effectiveness, resource utilization, and outcomes for 275 youth participants ages 12-18. Findings demonstrate that the program successfully achieved 85% of its outcome targets while operating 7% under budget, with particularly strong results in academic improvement among high-risk youth.
+
+**Key Findings**
+• **Increased Reach**: Served 275 youth (22% increase from previous year), with 68% from historically underserved communities
+• **Academic Impact**: 83% of participants improved their GPA by at least 0.5 points; 91% reported increased educational aspirations
+• **Behavioral Outcomes**: Reduced school disciplinary incidents by 47% among participants; 78% demonstrated improved conflict resolution skills
+• **Mentorship Quality**: 92% of youth reported strong relationships with mentors; average relationship duration increased to 14 months
+• **Community Engagement**: Participants completed 4,250 hours of community service (15% above target)
+
+**Financial Overview**
+The program operated at $427,500, approximately 7% under the projected budget of $460,000. Cost per youth served decreased from $1,850 to $1,555. Current funding will sustain existing operations through FY 2024, but an additional $175,000 is needed to implement expansion to two new school sites as outlined in the strategic plan.
+
+**Challenges and Solutions**
+Participant retention in the 16-18 age group remained challenging at 67% (below the 80% target). Exit surveys indicated scheduling conflicts with employment and extracurricular activities as primary factors. In response, the program piloted flexible scheduling options and virtual mentoring sessions in Q4, resulting in a 12% improvement in retention for this age group. Mentor recruitment also fell short by 15 volunteers, leading to waitlists at three school sites.
+
+**Recommendations**
+• **Expand Flexible Programming**: Implement hybrid and evening mentoring options across all sites by September 2023
+• **Enhance Mentor Recruitment**: Develop corporate partnership program targeting 25 new mentors from local businesses by December 2023
+• **Strengthen Retention**: Create peer ambassador program and transportation assistance for older participants by October 2023
+• **Curriculum Enhancement**: Update career readiness modules based on participant feedback by November 2023
+• **Data Systems**: Upgrade participant tracking software to improve outcomes measurement by January 2024
+
+**Conclusion**
+Brightpath Youth Mentoring continues to demonstrate significant positive impact on academic achievement and behavioral outcomes for vulnerable youth. While challenges in retention and recruitment require attention, the program&#x27;s strong foundation and responsive approach position it well for sustainable growth. The recommended enhancements will strengthen Brightpath&#x27;s ability to fulfill its mission of empowering youth through meaningful mentorship relationships while expanding its reach to more underserved communities.
+
+---
+
+Example #2: Community Needs Assessment Report
+
+Input:
+A 38-page community needs assessment with demographic analysis, survey results from 500+ community members, focus group findings, service gap analysis, and preliminary recommendations for a food security initiative.
+
+Thoughts:
+- Primary audience is organization leadership and potential funders
+- Key findings show significant food insecurity in specific neighborhoods
+- Data reveals transportation as a major barrier to accessing services
+- Community input strongly favors mobile distribution model
+- Recommendations require substantial new funding and partnerships
+
+Output:
+
+**Executive Summary: Northwest Community Food Security Assessment**
+
+**Introduction**
+This community needs assessment examines food security challenges in Northwest County, with particular focus on the Westside and Pine Hills neighborhoods. Conducted between January-March 2023, the assessment combined quantitative and qualitative methods to identify gaps in current food assistance services and community-driven solutions. Findings reveal critical food access barriers affecting an estimated 34% of residents, with transportation limitations and awareness gaps emerging as primary obstacles to utilizing existing resources.
+
+**Key Findings**
+• **Prevalence**: 34% of surveyed households experience food insecurity, with rates reaching 52% in the Pine Hills neighborhood
+• **Demographic Patterns**: Single-parent households (68%) and seniors living alone (47%) face highest rates of food insecurity
+• **Access Barriers**: 73% of food-insecure households lack reliable transportation to food distribution sites
+• **Service Gaps**: Current food assistance programs reach only an estimated 40% of eligible residents
+• **Community Preferences**: 87% of respondents preferred neighborhood-based distribution over centralized locations
+
+**Resource Assessment**
+Current food security initiatives operate with approximately $375,000 in combined annual funding, serving an estimated 2,800 households monthly. Analysis indicates a service gap affecting approximately 1,900 eligible households. Existing infrastructure utilizes 85% of available cold storage capacity and 92% of distribution capacity, limiting expansion potential without additional resources.
+
+**Challenges and Solutions**
+Geographic isolation and limited public transportation emerged as the most significant barriers to food access. The three existing distribution sites are inaccessible to 65% of food-insecure households without private transportation. Community feedback strongly supported mobile distribution models and neighborhood-based satellite locations. Pilot &quot;pop-up pantry&quot; events demonstrated 300% higher participation rates than traditional distribution methods.
+
+**Recommendations**
+• **Mobile Distribution**: Launch two mobile food distribution vehicles serving 8 neighborhood locations weekly by Q1 2024
+• **Satellite Locations**: Establish 5 micro-pantries in community centers and faith organizations by Q4 2023
+• **Transportation Solution**: Implement volunteer delivery program for homebound seniors and disabled residents by Q3 2023
+• **Outreach Enhancement**: Develop multilingual awareness campaign targeting underserved communities by Q3 2023
+• **Collaborative Framework**: Form Food Security Coalition with 12+ community partners by Q2 2023
+
+**Conclusion**
+This assessment clearly demonstrates both significant unmet food security needs and viable community-supported solutions in Northwest County. The recommended mobile and neighborhood-based approach directly addresses the transportation barriers preventing thousands of residents from accessing nutritional support. By implementing these recommendations, [ORGANIZATION_NAME] has the opportunity to increase food security for an estimated 1,500 additional households while building a more resilient, accessible food assistance network aligned with community priorities.
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+When creating an executive summary from a detailed nonprofit report:
+
+1. **Focus on Impact and Outcomes**: Prioritize information that demonstrates measurable change, not just activities completed.
+
+2. **Know Your Audience**: Tailor the content and level of detail to the specific stakeholders who will read the summary (board members, donors, staff leadership).
+
+3. **Be Concise but Complete**: Limit length to 1-2 pages (500-1000 words) while ensuring all critical information is included.
+
+4. **Maintain Accuracy**: Present data and findings faithfully from the original report without distortion or exaggeration.
+
+5. **Structure for Readability**: Use clear headings, bullet points, and visual emphasis to make information accessible to busy readers.
+
+6. **Connect to Mission**: Frame findings and recommendations within the context of your organization&#x27;s mission and strategic priorities.
+
+7. **Include Actionable Next Steps**: Ensure recommendations are specific, feasible, and clearly connected to the findings.
+
+Remember to customize the template by replacing all placeholder variables: [ORGANIZATION_NAME], [REPORT_TITLE], [AUDIENCE_TYPE], and [SECTOR_TYPE]. The executive summary should feel like it was created specifically for your organization while maintaining professional standards for nonprofit communications.
+&lt;/RECAP&gt;</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program expansion feasibility analysis - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Program expansion feasibility analysis</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Program expansion feasibility analysis - Medium Complexity</h1><br><strong>Category:</strong> Learn and Decide<br><strong>Template Type:</strong> Strategic Planning &amp; Forecasting<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Supporting long-term planning and decision-making processes
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Program Expansion Feasibility Analysis Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a nonprofit strategic planning consultant with expertise in program expansion analysis. Your task is to evaluate the feasibility of expanding [PROGRAM_NAME] for [ORGANIZATION_NAME], considering resource constraints, impact potential, and alignment with mission.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+Analyze the following information to create a comprehensive feasibility assessment:
+1. Review [ORGANIZATION_NAME]&#x27;s current program data, capacity, and resources
+2. Evaluate the proposed expansion in terms of financial sustainability, operational requirements, and potential impact
+3. Identify key risks, opportunities, and critical success factors
+4. Consider alternative expansion approaches or timelines
+5. Recommend a strategic path forward with implementation considerations
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide your analysis in the following format:
+1. Executive Summary (3-5 bullet points highlighting key findings)
+2. Expansion Feasibility Assessment
+   - Financial Analysis (startup costs, ongoing expenses, funding sources)
+   - Operational Requirements (staffing, infrastructure, partnerships)
+   - Impact Potential (quantitative and qualitative measures)
+3. Risk Assessment (identify 3-5 key risks and mitigation strategies)
+4. Strategic Recommendations
+   - Go/No-Go Recommendation with rationale
+   - Implementation Timeline (if recommended)
+   - Key Performance Indicators to track
+5. Next Steps (3-5 actionable items)
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+1. Focus on practical, resource-conscious solutions appropriate for nonprofit contexts
+2. Consider both quantitative metrics and mission-aligned qualitative outcomes
+3. Avoid overly complex financial models that require specialized expertise
+4. Ensure recommendations are scalable based on funding availability
+5. Balance ambition with realistic capacity assessment
+&lt;/CONSTRAINTS&gt;
+
+---
+
+**Use with ChatGPT-o3 for optimal strategic analysis**
+
+To use this template effectively:
+- Replace [ORGANIZATION_NAME] with your nonprofit&#x27;s name
+- Replace [PROGRAM_NAME] with the specific program you&#x27;re considering expanding
+- Provide current program data including: budget, staffing, current reach, outcomes, and any evaluation results
+- Describe your expansion goals, target population, and timeline considerations
+- Include any specific constraints or requirements for the expansion</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership data updates and maintenance - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Membership data updates and maintenance</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Membership data updates and maintenance - Medium Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Repetitive Data Processing<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Automating routine data handling and transfer tasks
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Membership Data Processing Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a Membership Database Specialist for [ORGANIZATION_NAME], responsible for efficiently processing and maintaining accurate membership records. Your task is to help analyze, clean, and update membership data while identifying potential issues that require human review.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+Process the membership data I provide by:
+1. Identifying and standardizing inconsistent formatting (names, addresses, emails, phone numbers)
+2. Flagging duplicate records with a [DUPLICATE] tag and explanation
+3. Highlighting missing critical fields with a [MISSING] tag
+4. Identifying outdated information (memberships expired over [EXPIRATION_THRESHOLD] days)
+5. Suggesting data enrichment opportunities (missing email, phone, etc.)
+6. Organizing members into segments based on [SEGMENTATION_CRITERIA]
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide your analysis in this format:
+1. **Data Quality Summary**: Brief overview of the dataset quality
+2. **Standardized Records**: List of cleaned/standardized records
+3. **Issues Requiring Attention**: All flagged records with specific tags
+4. **Membership Insights**: Key patterns or trends noticed
+5. **Recommended Actions**: Prioritized next steps for data maintenance
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+1. Do maintain data privacy by not suggesting external lookups for missing information
+2. Don&#x27;t remove any records completely; flag them instead
+3. Do follow [ORGANIZATION_NAME]&#x27;s data standards for formatting
+&lt;/CONSTRAINTS&gt;
+
+---
+
+**Use with ChatGPT-4o model for optimal balance of accuracy and processing capability.**
+
+**Key variables to customize:**
+- [ORGANIZATION_NAME] - Your nonprofit&#x27;s name
+- [EXPIRATION_THRESHOLD] - Number of days (typically 30, 60, or 90)
+- [SEGMENTATION_CRITERIA] - Your membership categories (e.g., &quot;membership level, geographic region, join date&quot;)
+
+To use: Copy this template, replace the variables with your specific information, and paste your membership data below the template when prompted.</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

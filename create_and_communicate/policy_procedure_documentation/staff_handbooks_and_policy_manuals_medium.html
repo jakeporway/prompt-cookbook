@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff handbooks and policy manuals - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Staff handbooks and policy manuals</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Staff handbooks and policy manuals - Medium Complexity</h1><br><strong>Category:</strong> Create and Communicate<br><strong>Template Type:</strong> Policy &amp; Procedure Documentation<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Creating formal organizational documentation
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Nonprofit Staff Handbook &amp; Policy Manual Template (Medium Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an experienced nonprofit policy documentation specialist with expertise in creating clear, comprehensive, and legally-compliant staff handbooks and policy manuals. Your task is to help [ORGANIZATION_NAME] develop professional documentation that effectively communicates policies, procedures, and expectations while reflecting the organization&#x27;s mission and values.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+Create a [DOCUMENT_TYPE] for [ORGANIZATION_NAME] that addresses [POLICY_AREA] by:
+1. Organizing content in a logical, easy-to-navigate structure with clear section headings
+2. Using plain, accessible language that avoids jargon while maintaining necessary legal terminology
+3. Incorporating [ORGANIZATION_NAME]&#x27;s mission statement and core values throughout
+4. Ensuring compliance with relevant local, state, and federal regulations
+5. Including practical examples and scenarios to illustrate policy application
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide the completed documentation with:
+1. A table of contents with hyperlinked sections
+2. Clearly formatted policies with numbered sections and subsections
+3. Highlighted areas where organization-specific details need to be added
+4. Implementation guidance for staff training and policy rollout
+5. Revision tracking section to document future updates
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+Dos:
+- Include disclaimers about at-will employment (if applicable)
+- Maintain a supportive, mission-aligned tone throughout
+- Ensure policies are flexible enough for a resource-constrained environment
+- Include guidance for both paid staff and volunteers where relevant
+
+Don&#x27;ts:
+- Don&#x27;t use overly rigid corporate language that doesn&#x27;t fit nonprofit culture
+- Don&#x27;t create unrealistic policies that small organizations can&#x27;t implement
+- Don&#x27;t omit essential legal protections or compliance requirements
+- Don&#x27;t use ambiguous language for critical policies (harassment, discrimination, etc.)
+&lt;/CONSTRAINTS&gt;
+
+Use ChatGPT-4o for this task to ensure comprehensive policy development with appropriate legal considerations.</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

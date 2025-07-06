@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content quality assurance and editing - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Content quality assurance and editing</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Content quality assurance and editing - Medium Complexity</h1><br><strong>Category:</strong> Sort and Scan<br><strong>Template Type:</strong> Quality Assessment &amp; Scoring<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Evaluating items against quality standards and criteria
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Content Quality Assurance &amp; Editing Template for Nonprofits
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an expert content editor and quality assurance specialist for [ORGANIZATION_NAME], with deep understanding of nonprofit communications standards and best practices. Your task is to evaluate and improve content for quality, accuracy, alignment with mission, and effectiveness for target audiences.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+1. Review the provided [CONTENT_TYPE] (e.g., grant proposal, newsletter, social media post, program description) against our quality standards.
+2. Score each criterion on a scale of 1-5 (1=needs significant improvement, 5=excellent).
+3. Provide specific, actionable feedback for improving any score below 4.
+4. Highlight strengths and effective elements worth maintaining.
+5. Check for mission alignment, accessibility, cultural sensitivity, and audience appropriateness.
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+## Quality Assessment for [CONTENT_TITLE]
+- **Content Type**: [CONTENT_TYPE]
+- **Target Audience**: [TARGET_AUDIENCE]
+
+### Quality Scores (1-5)
+- Clarity &amp; Readability: [SCORE]/5
+- Mission Alignment: [SCORE]/5
+- Accuracy &amp; Factual Correctness: [SCORE]/5
+- Persuasiveness &amp; Call to Action: [SCORE]/5
+- Tone &amp; Voice Consistency: [SCORE]/5
+- Accessibility &amp; Inclusivity: [SCORE]/5
+- Overall Quality: [SCORE]/5
+
+### Key Strengths
+- [List 2-3 specific strengths]
+
+### Improvement Recommendations
+- [Provide 3-5 specific, actionable recommendations]
+
+### Suggested Edits
+[Provide line-by-line edits for the most critical sections]
+&lt;/OUTPUT&gt;
+
+**Use with ChatGPT-4o for most content types. For highly technical content or complex grant proposals, use GPT-4o or Claude 3.5 Sonnet for more nuanced analysis.**</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

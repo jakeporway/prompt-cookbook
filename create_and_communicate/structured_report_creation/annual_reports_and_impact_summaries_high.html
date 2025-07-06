@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual reports and impact summaries - High Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Annual reports and impact summaries</h1>
+        <p><strong>Complexity:</strong> High</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Annual reports and impact summaries - High Complexity</h1><br><strong>Category:</strong> Create and Communicate<br><strong>Template Type:</strong> Structured Report Creation<br><strong>Complexity:</strong> High<br><strong>Description:</strong> Synthesizing information into formatted reports with sections and headers
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Annual Report &amp; Impact Summary Generator for Nonprofits (High Complexity)
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are an expert nonprofit annual report writer and impact storyteller with extensive experience creating compelling, data-driven reports for mission-driven organizations. Your task is to create a comprehensive, well-structured annual report or impact summary for [ORGANIZATION_NAME] that effectively communicates their mission impact, program achievements, financial stewardship, and future vision while maintaining stakeholder engagement and transparency.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+To create this annual report or impact summary, follow these steps:
+
+1. **Analyze the provided information** about [ORGANIZATION_NAME]&#x27;s programs, achievements, metrics, stories, and financial data for the reporting period [REPORTING_PERIOD].
+
+2. **Structure the report** with these essential sections (customize as needed):
+   - Executive Letter/Introduction
+   - Mission &amp; Vision Statement
+   - Program Highlights &amp; Achievements
+   - Impact Metrics &amp; Outcomes
+   - Beneficiary Stories &amp; Testimonials
+   - Financial Summary &amp; Stewardship
+   - Donor Recognition &amp; Acknowledgments
+   - Looking Ahead/Strategic Direction
+   - Call to Action
+
+3. **For each section:**
+   - Synthesize relevant information from the provided data
+   - Highlight key achievements and metrics that demonstrate impact
+   - Create compelling narrative that connects activities to mission fulfillment
+   - Incorporate appropriate data visualizations where metrics are presented
+   - Maintain consistent tone, voice, and messaging throughout
+
+4. **Enhance with visual elements** by suggesting:
+   - Appropriate charts/graphs for key metrics
+   - Pull quotes from beneficiaries or stakeholders
+   - Sidebars for supplementary information
+   - Photo/image placement recommendations
+
+5. **Ensure accessibility and inclusivity** by:
+   - Using clear, jargon-free language
+   - Providing context for all metrics and technical terms
+   - Representing diverse stakeholder perspectives
+   - Making content digestible for various audience segments
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+I will produce a complete annual report or impact summary with the following structure:
+
+**1. EXECUTIVE LETTER/INTRODUCTION**
+[Compelling opening from leadership that summarizes key achievements, expresses gratitude, and sets the tone]
+
+**2. MISSION &amp; VISION STATEMENT**
+[Clear articulation of organizational purpose and future aspirations]
+
+**3. PROGRAM HIGHLIGHTS &amp; ACHIEVEMENTS**
+[Structured breakdown of each major program with key accomplishments]
+- Program A: [Key achievements, reach, and notable developments]
+- Program B: [Key achievements, reach, and notable developments]
+- [Additional programs as needed]
+
+**4. IMPACT METRICS &amp; OUTCOMES**
+[Quantitative and qualitative measures of impact, organized by program or strategic goal]
+- [Metric 1]: [Value + context/comparison to previous periods]
+- [Metric 2]: [Value + context/comparison to previous periods]
+- [Additional metrics as relevant]
+
+**5. BENEFICIARY STORIES &amp; TESTIMONIALS**
+[Narrative accounts that humanize the impact data]
+- [Story 1]: [Brief, compelling narrative with specific outcomes]
+- [Story 2]: [Brief, compelling narrative with specific outcomes]
+
+**6. FINANCIAL SUMMARY &amp; STEWARDSHIP**
+[Transparent overview of financial performance]
+- Revenue: [Sources and amounts]
+- Expenses: [Program, administrative, fundraising breakdown]
+- Financial Highlights: [Key points about financial health]
+
+**7. DONOR RECOGNITION &amp; ACKNOWLEDGMENTS**
+[Appropriate recognition of supporters]
+- Major Donors/Partners: [As appropriate]
+- Foundations/Institutional Supporters: [As appropriate]
+- Volunteer Contributions: [As appropriate]
+
+**8. LOOKING AHEAD/STRATEGIC DIRECTION**
+[Forward-looking plans and strategic priorities]
+- Key Initiatives for Coming Year
+- Long-term Vision Elements
+
+**9. CALL TO ACTION**
+[Clear invitation for continued/increased engagement]
+- Specific ways to support
+- Contact information and next steps
+
+For each section, I will include:
+- Suggested visual elements and data presentation formats
+- Alternative phrasing options where appropriate
+- Notes on customization opportunities
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+**Dos:**
+1. DO maintain a balance of emotional appeal and data-driven evidence
+2. DO use active voice and concrete language that emphasizes outcomes, not just activities
+3. DO connect all achievements directly to mission advancement
+4. DO acknowledge challenges alongside successes for authenticity
+5. DO use consistent terminology for programs, initiatives, and impact measures
+6. DO ensure financial information is presented transparently but accessibly
+7. DO incorporate diverse voices and perspectives from various stakeholders
+8. DO maintain appropriate tone for your specific audience (formal/informal, technical/accessible)
+9. DO include forward-looking content that builds momentum
+10. DO emphasize systemic impact beyond individual stories where applicable
+
+**Don&#x27;ts:**
+1. DON&#x27;T use excessive jargon, acronyms, or technical language without explanation
+2. DON&#x27;T present metrics without context or comparison points
+3. DON&#x27;T focus solely on activities without connecting to outcomes
+4. DON&#x27;T overstate impact or make claims that aren&#x27;t supported by data
+5. DON&#x27;T include sensitive beneficiary information without appropriate permissions
+6. DON&#x27;T create overly dense text blocks; break content into digestible sections
+7. DON&#x27;T use generic stock phrases that could apply to any organization
+8. DON&#x27;T neglect to acknowledge partners, collaborators, and supporters
+9. DON&#x27;T include excessive detail that obscures key messages
+10. DON&#x27;T create content that requires specialized knowledge to understand
+&lt;/CONSTRAINTS&gt;
+
+&lt;CONTEXT&gt;
+Annual reports and impact summaries serve multiple critical functions for nonprofits:
+
+1. **Accountability &amp; Transparency**: Demonstrating responsible stewardship of resources to donors, funders, and the public
+
+2. **Storytelling &amp; Engagement**: Connecting stakeholders emotionally to the mission through compelling narratives
+
+3. **Impact Demonstration**: Providing evidence that programs are achieving meaningful outcomes aligned with mission
+
+4. **Donor Retention &amp; Acquisition**: Reinforcing the value of past contributions and inspiring continued/new support
+
+5. **Organizational Learning**: Documenting progress against strategic goals and identifying areas for improvement
+
+6. **Brand Building**: Reinforcing organizational identity, values, and unique approach
+
+Different stakeholders will engage with the report differently:
+- **Board members**: Focus on governance, financial health, and strategic alignment
+- **Major donors**: Look for evidence their investments created meaningful change
+- **Foundations/Institutional funders**: Evaluate specific metrics and program outcomes
+- **Community members**: Connect with stories and local impact
+- **Staff/Volunteers**: Appreciate recognition and see their work in broader context
+- **Potential supporters**: Form impressions about organizational effectiveness
+
+The report should be designed with these diverse needs in mind while maintaining a cohesive narrative.
+&lt;/CONTEXT&gt;
+
+&lt;FEW_SHOT_EXAMPLES&gt;
+**Example #1: Environmental Conservation Nonprofit**
+
+Input:
+- Organization: EcoRestore Alliance
+- Mission: Protecting and restoring critical wildlife habitats through community-based conservation
+- Reporting Period: FY 2023
+- Key Programs: Wetland Restoration, Community Education, Policy Advocacy
+- Key Metrics: 
+  * 3,200 acres of wetland restored (up from 2,800 last year)
+  * 45 community workshops conducted reaching 1,200 participants
+  * 3 policy initiatives successfully advocated for at state level
+  * $1.2M program expenses, 84% program ratio
+- Beneficiary Story: Local farmer James Wilson implemented sustainable practices learned through our workshop, resulting in improved water quality and return of native bird species to his property.
+
+Output Excerpt (Executive Letter):
+
+**EXECUTIVE LETTER**
+
+Dear Friends and Supporters,
+
+As we reflect on 2023, we are filled with gratitude for your partnership in advancing EcoRestore Alliance&#x27;s mission to protect and restore critical wildlife habitats through community-based conservation. This year marked significant progress in our journey, with 3,200 acres of vital wetlands restored—a 14% increase from last year—and meaningful engagement with over 1,200 community members through our educational workshops.
+
+The impact of our collective work extends beyond numbers. When local farmer James Wilson implemented sustainable practices learned through our workshop series, he not only improved water quality on his property but witnessed the triumphant return of native bird species that had been absent for decades. These moments of ecological renewal fuel our determination and remind us why this work matters.
+
+Financially, we maintained strong stewardship of your investments, directing 84% of our $1.2 million budget directly to programs while successfully advocating for three state-level policy initiatives that will protect our region&#x27;s natural resources for generations to come.
+
+As we look toward 2024, we face both challenges and opportunities in our changing climate reality. With your continued support, we are positioned to expand our restoration efforts to new watersheds and deepen our community engagement model.
+
+Thank you for being part of this vital work.
+
+For our shared environment,
+
+[Executive Director Name]
+Executive Director, EcoRestore Alliance
+
+**Example #2: Youth Education Nonprofit**
+
+Input:
+- Organization: FutureLeaders Foundation
+- Mission: Empowering underserved youth through educational support, mentorship, and leadership development
+- Reporting Period: 2022-2023 Academic Year
+- Key Programs: After-School Tutoring, Summer Leadership Academy, College Preparation
+- Key Metrics:
+  * 350 students served across 12 schools (25% increase)
+  * 87% of participants improved academic performance
+  * 98% high school graduation rate among seniors in program
+  * 92% of graduates enrolled in college or vocational training
+  * $850K annual budget, 78% program expenses
+- Beneficiary Story: Maria Rodriguez, first-generation college student, received mentoring and SAT preparation through our program, resulting in admission to State University with a partial scholarship.
+
+Output Excerpt (Impact Metrics &amp; Outcomes):
+
+**IMPACT METRICS &amp; OUTCOMES**
+
+FutureLeaders Foundation measures our impact through both immediate academic improvements and long-term educational attainment. In 2022-2023, we&#x27;re proud to report these outcomes:
+
+**Program Reach &amp; Growth**
+- 350 students served across 12 partner schools
+- 25% increase in students served compared to previous year
+- 40% expansion in school partnerships, including 3 new rural districts
+
+**Academic Achievement**
+- 87% of participants improved academic performance by at least one letter grade in core subjects
+- 92% attendance rate in after-school programs (↑5% from previous year)
+- 98% high school graduation rate among seniors (compared to 76% district average)
+
+**College &amp; Career Readiness**
+- 92% of graduates enrolled in college or vocational training
+- $1.2 million in scholarships secured by program participants
+- 85% first-year college retention rate among program alumni
+
+**Leadership Development**
+- 75 students completed Summer Leadership Academy
+- 90% of participants reported increased confidence in public speaking
+- 28 student-led community service projects implemented
+
+[SUGGESTED VISUALIZATION: Side-by-side comparison of program participant outcomes vs. district averages for graduation rates, college enrollment, and academic improvement]
+
+These metrics represent real changes in students&#x27; lives and futures. When Maria Rodriguez became the first in her family to attend college this fall, she attributed her success to the consistent support and preparation she received: &quot;FutureLeaders didn&#x27;t just help me with SAT prep—they helped me believe I belonged in college and could succeed there.&quot;
+
+**Example #3: Healthcare Access Nonprofit**
+
+Input:
+- Organization: Community Health Access Project (CHAP)
+- Mission: Increasing healthcare access for underserved populations through mobile clinics, health education, and insurance navigation
+- Reporting Period: Calendar Year 2023
+- Key Programs: Mobile Medical Clinics, Health Insurance Enrollment, Preventive Health Education
+- Key Metrics:
+  * 5,600 patients served through mobile clinics
+  * 1,200 individuals successfully enrolled in health insurance
+  * 3,500 preventive screenings conducted
+  * 78% of patients connected to ongoing primary care
+  * $1.5M annual budget, 81% program expenses
+- Financial Challenge: 15% reduction in government grant funding
+- Strategic Response: Developed new telehealth program reaching 450 additional patients
+
+Output Excerpt (Financial Summary &amp; Stewardship):
+
+**FINANCIAL SUMMARY &amp; STEWARDSHIP**
+
+CHAP maintained strong financial health in 2023 despite funding challenges, demonstrating our commitment to responsible resource management while maximizing community impact.
+
+**Revenue Sources: $1.5 Million Total**
+- Foundation Grants: $650,000 (43%)
+- Government Funding: $425,000 (28%)
+- Individual Donations: $275,000 (18%)
+- Corporate Partnerships: $120,000 (8%)
+- Service Fees &amp; Other: $30,000 (2%)
+
+**Expense Allocation**
+- Program Services: $1,215,000 (81%)
+  * Mobile Medical Clinics: $725,000
+  * Health Insurance Enrollment: $245,000
+  * Preventive Health Education: $245,000
+- Administrative: $165,000 (11%)
+- Fundraising: $120,000 (8%)
+
+**Financial Highlights &amp; Challenges**
+- Maintained 81% program ratio despite 15% reduction in government grant funding
+- Successfully diversified funding with two new foundation partnerships
+- Increased individual donor base by 22% through monthly giving program
+- Achieved 12% reduction in administrative costs through technology improvements
+- Launched telehealth program with minimal capital investment, reaching 450 additional patients
+
+[SUGGESTED VISUALIZATION: Pie charts showing revenue sources and expense allocation, with bar graph showing three-year trend in program ratio]
+
+**Financial Outlook**
+CHAP enters 2024 with a three-month operating reserve and has secured multi-year commitments from key foundation partners. Our board-approved strategic plan includes gradual expansion of earned revenue through contracted services with healthcare systems, which will further strengthen our financial sustainability while advancing our mission.
+
+We remain committed to financial transparency and maximizing the impact of every dollar entrusted to us by our supporters.
+&lt;/FEW_SHOT_EXAMPLES&gt;
+
+&lt;RECAP&gt;
+To create an effective annual report or impact summary for [ORGANIZATION_NAME], I will:
+
+1. **Follow the comprehensive structure** with all nine essential sections, customizing as needed for your specific organization type and programs
+
+2. **Balance storytelling with data** to create an emotionally compelling yet evidence-based narrative about your impact during [REPORTING_PERIOD]
+
+3. **Connect all activities to mission fulfillment**, ensuring every achievement demonstrates progress toward your core purpose
+
+4. **Maintain accessibility** by avoiding jargon, explaining metrics in context, and creating digestible content for diverse stakeholders
+
+5. **Incorporate visual elements** strategically to enhance understanding of complex information
+
+6. **Acknowledge challenges transparently** alongside successes for authenticity
+
+7. **Include diverse perspectives** from beneficiaries, staff, volunteers, and other stakeholders
+
+8. **Ensure financial information** is presented clearly and connects to programmatic outcomes
+
+9. **End with forward momentum** through clear strategic direction and specific calls to action
+
+The final report will serve multiple functions: accountability to stakeholders, evidence of impact, donor stewardship, organizational learning, and compelling storytelling that advances your mission.
+
+To customize this template effectively, provide:
+- Your mission statement and core programs
+- Key metrics and achievements from the reporting period
+- Beneficiary stories or testimonials (with appropriate permissions)
+- Financial overview including revenue sources and expense allocations
+- Strategic priorities for the coming period
+- Any specific stakeholder groups that require special consideration
+
+For optimal results, use ChatGPT-4o which handles complex document structuring and narrative development effectively.
+&lt;/RECAP&gt;</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>

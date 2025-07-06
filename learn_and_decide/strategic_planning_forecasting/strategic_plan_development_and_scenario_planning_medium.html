@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic plan development and scenario planning - Medium Complexity</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .metadata {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .template-section {
+            margin-bottom: 30px;
+        }
+        .template-code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            position: relative;
+            overflow-x: auto;
+        }
+        .template-content {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        .template-content-low {
+            
+            margin: 0;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-button:active {
+            background: #004085;
+        }
+        .back-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #218838;
+        }
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-button">← Back to Cookbook</a>
+        <h1>Strategic plan development and scenario planning</h1>
+        <p><strong>Complexity:</strong> Medium</p>
+    </div>
+    
+    <div class="metadata">
+        <h2>Template Information</h2>
+        <h1>Strategic plan development and scenario planning - Medium Complexity</h1><br><strong>Category:</strong> Learn and Decide<br><strong>Template Type:</strong> Strategic Planning &amp; Forecasting<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Supporting long-term planning and decision-making processes
+    </div>
+    
+    <div class="template-section">
+        <h2>Template</h2>
+        <div class="template-code">
+            <button class="copy-button" onclick="copyTemplate()">Copy Template</button>
+            <pre id="template-content" class="template-content"># Nonprofit Strategic Planning &amp; Scenario Development Template
+
+&lt;OBJECTIVE_AND_PERSONA&gt;
+You are a nonprofit strategic planning consultant with expertise in scenario planning and long-term organizational development. Your task is to help [ORGANIZATION_NAME] develop a comprehensive strategic plan and scenario analysis that aligns with their mission of [MISSION_STATEMENT] while addressing current challenges and future opportunities.
+&lt;/OBJECTIVE_AND_PERSONA&gt;
+
+&lt;INSTRUCTIONS&gt;
+Using ChatGPT-o3 (recommended for complex strategic analysis), analyze the provided information and develop a strategic plan with scenario planning by:
+
+1. Analyzing [ORGANIZATION_NAME]&#x27;s current state, including strengths, weaknesses, opportunities, and threats
+2. Identifying 3-5 strategic priorities based on [PLANNING_TIMEFRAME] (typically 3-5 years)
+3. Developing 3 distinct future scenarios (optimistic, realistic, and challenging)
+4. Creating actionable recommendations for each strategic priority
+5. Suggesting key performance indicators to track progress
+&lt;/INSTRUCTIONS&gt;
+
+&lt;OUTPUT&gt;
+Provide a strategic planning document with:
+1. Executive Summary (3-5 bullet points)
+2. Current State Analysis (SWOT)
+3. Strategic Priorities (3-5)
+4. Future Scenarios (Optimistic, Realistic, Challenging)
+5. Implementation Recommendations
+6. Key Performance Indicators
+7. Next Steps
+&lt;/OUTPUT&gt;
+
+&lt;CONSTRAINTS&gt;
+1. Focus on practical, resource-conscious strategies appropriate for nonprofit constraints
+2. Ensure all recommendations align with [ORGANIZATION_NAME]&#x27;s mission and values
+3. Consider the needs of key stakeholders: [KEY_STAKEHOLDERS]
+4. Avoid overly complex frameworks that require specialized expertise to implement
+&lt;/CONSTRAINTS&gt;</pre>
+        </div>
+    </div>
+    
+    <div id="copy-success" class="alert alert-success" style="display: none;">
+        Template copied to clipboard!
+    </div>
+    
+    <script>
+        function copyTemplate() {
+            const templateContent = document.getElementById('template-content').textContent;
+            navigator.clipboard.writeText(templateContent).then(function() {
+                const successAlert = document.getElementById('copy-success');
+                successAlert.style.display = 'block';
+                setTimeout(function() {
+                    successAlert.style.display = 'none';
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy template to clipboard');
+            });
+        }
+    </script>
+</body>
+</html>
