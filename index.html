@@ -228,6 +228,68 @@
         .steps li {
             margin-bottom: 8px;
         }
+        .search-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .search-section h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .search-container {
+            position: relative;
+            margin: 20px 0;
+        }
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .clear-search {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 12px;
+            display: none;
+        }
+        .clear-search:hover {
+            background: #c82333;
+        }
+        .search-results {
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .use-case-card.hidden {
+            display: none !important;
+        }
+        .template-type-section.no-results {
+            opacity: 0.5;
+        }
+        .search-highlight {
+            background: #fff3cd;
+            font-weight: bold;
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
@@ -289,7 +351,19 @@
         <p><strong>Remember:</strong> AI is a tool to help you work faster and more effectively, not to replace your expertise. You know your organization best - use these templates as starting points and customize them to fit your unique needs and voice.</p>
     </div>
     
-    <div class="categories">
+    <div class="search-section">
+        <h2>🔍 Find the Perfect Template</h2>
+        <p>Search through all 365 templates to find exactly what you need:</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search templates... (e.g., 'social media', 'grant writing', 'donor')">
+            <button id="clearSearch" class="clear-search">✕</button>
+        </div>
+        <div class="search-results">
+            <span id="searchResults">Showing all templates</span>
+        </div>
+    </div>
+    
+    <div class="categories" id="categoriesContainer">
         
                 <div class="category-section">
                     <div class="category-header" onclick="toggleCategory('create_and_communicate')">
@@ -1507,6 +1581,137 @@
                 icon.style.transform = 'translateY(-50%) rotate(180deg)';
             }
         }
+        
+        // Search functionality
+        let searchTimeout;
+        const searchInput = document.getElementById('searchInput');
+        const clearButton = document.getElementById('clearSearch');
+        const searchResults = document.getElementById('searchResults');
+        
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.use-case-card');
+            const templateSections = document.querySelectorAll('.template-type-section');
+            let visibleCount = 0;
+            
+            // Show/hide clear button
+            clearButton.style.display = searchTerm ? 'block' : 'none';
+            
+            if (!searchTerm) {
+                // Show all cards
+                cards.forEach(card => {
+                    card.classList.remove('hidden');
+                    removeHighlights(card);
+                });
+                templateSections.forEach(section => section.classList.remove('no-results'));
+                searchResults.textContent = 'Showing all templates';
+                return;
+            }
+            
+            // Auto-expand all categories when searching
+            const categoryContents = document.querySelectorAll('.category-content');
+            const toggleIcons = document.querySelectorAll('[id^="toggle-"]');
+            categoryContents.forEach(content => content.classList.add('active'));
+            toggleIcons.forEach(icon => {
+                icon.textContent = '▲';
+                icon.style.transform = 'translateY(-50%) rotate(180deg)';
+            });
+            
+            // Filter cards
+            cards.forEach(card => {
+                const title = card.querySelector('h4').textContent.toLowerCase();
+                const description = card.querySelector('.action-description').textContent.toLowerCase();
+                const category = card.closest('.category-section').querySelector('h2').textContent.toLowerCase();
+                const templateType = card.closest('.template-type-section').querySelector('h3').textContent.toLowerCase();
+                
+                const searchContent = `${title} ${description} ${category} ${templateType}`;
+                
+                if (searchContent.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                    highlightText(card, searchTerm);
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                    removeHighlights(card);
+                }
+            });
+            
+            // Update template sections visibility
+            templateSections.forEach(section => {
+                const visibleCards = section.querySelectorAll('.use-case-card:not(.hidden)');
+                if (visibleCards.length === 0) {
+                    section.classList.add('no-results');
+                } else {
+                    section.classList.remove('no-results');
+                }
+            });
+            
+            // Update results text
+            if (visibleCount === 0) {
+                searchResults.textContent = 'No templates found. Try different keywords.';
+            } else if (visibleCount === 1) {
+                searchResults.textContent = 'Found 1 template';
+            } else {
+                searchResults.textContent = `Found ${visibleCount} templates`;
+            }
+        }
+        
+        function highlightText(card, searchTerm) {
+            const elementsToHighlight = [
+                card.querySelector('h4'),
+                card.querySelector('.action-description')
+            ];
+            
+            elementsToHighlight.forEach(element => {
+                if (element) {
+                    const originalText = element.dataset.originalText || element.textContent;
+                    if (!element.dataset.originalText) {
+                        element.dataset.originalText = originalText;
+                    }
+                    
+                    const regex = new RegExp(`(${escapeRegex(searchTerm)})`, 'gi');
+                    const highlightedText = originalText.replace(regex, '<span class="search-highlight">$1</span>');
+                    element.innerHTML = highlightedText;
+                }
+            });
+        }
+        
+        function removeHighlights(card) {
+            const elementsToRestore = [
+                card.querySelector('h4'),
+                card.querySelector('.action-description')
+            ];
+            
+            elementsToRestore.forEach(element => {
+                if (element && element.dataset.originalText) {
+                    element.textContent = element.dataset.originalText;
+                }
+            });
+        }
+        
+        function escapeRegex(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+        
+        function clearSearch() {
+            searchInput.value = '';
+            performSearch();
+            searchInput.focus();
+        }
+        
+        // Event listeners
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(performSearch, 150);
+        });
+        
+        clearButton.addEventListener('click', clearSearch);
+        
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                clearSearch();
+            }
+        });
         
         // Auto-expand first category
         document.addEventListener('DOMContentLoaded', function() {
