@@ -95,7 +95,7 @@
     
     <div class="metadata">
         <h2>Template Information</h2>
-        <h1>Processing volunteer timesheets and hour tracking - Medium Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Repetitive Data Processing<br><strong>Complexity:</strong> Medium<br><strong>Description:</strong> Automating routine data handling and transfer tasks
+        <h1>Processing volunteer timesheets and hour tracking - Medium Complexity</h1><br><strong>Category:</strong> Automate the Admin<br><strong>Template Type:</strong> Repetitive Data Processing<br><strong>Complexity:</strong> Medium<br><strong>Recommended Model</strong>: ChatGPT-4o (for accuracy in data processing and pattern recognition)<br><strong>Key Variables to Replace</strong>:<br>- [ORGANIZATION_NAME] - Your nonprofit&#x27;s name<br>- [PROGRAM_NAME] - Names of your volunteer programs/departments<br>- [MILESTONE_HOURS] - Hour thresholds for volunteer recognition (e.g., 25, 50, 100)<br>- [TRACKING_SYSTEM] - Your volunteer management software or database<br>- [MAX_DAILY_HOURS] - Maximum reasonable hours per day (typically 8-12)<br>- [SPECIAL_EVENT_DATES] - Dates of service days, fundraisers, etc. with higher hours<br><strong>Usage Instructions</strong>: Paste your volunteer timesheet data after this prompt. For best results, provide data in a consistent format with volunteer name, date, hours, and program/activity.
     </div>
     
     <div class="template-section">
@@ -124,28 +124,7 @@ Please provide your analysis in this format:
 3. **Recognition Opportunities**: Volunteers who reached milestones
 4. **Statistical Highlights**: Key metrics and trends
 5. **Formatted Data**: Data prepared for [TRACKING_SYSTEM] import
-&lt;/OUTPUT&gt;
-
-&lt;CONSTRAINTS&gt;
-1. Round all hours to the nearest quarter-hour (0.25)
-2. Flag any single-day entries exceeding [MAX_DAILY_HOURS] hours
-3. Maintain volunteer privacy by using only first names and last initials in the summary
-4. Consider [SPECIAL_EVENT_DATES] when evaluating unusual hour patterns
-&lt;/CONSTRAINTS&gt;
-
----
-
-**Recommended Model**: ChatGPT-4o (for accuracy in data processing and pattern recognition)
-
-**Key Variables to Replace**:
-- [ORGANIZATION_NAME] - Your nonprofit&#x27;s name
-- [PROGRAM_NAME] - Names of your volunteer programs/departments
-- [MILESTONE_HOURS] - Hour thresholds for volunteer recognition (e.g., 25, 50, 100)
-- [TRACKING_SYSTEM] - Your volunteer management software or database
-- [MAX_DAILY_HOURS] - Maximum reasonable hours per day (typically 8-12)
-- [SPECIAL_EVENT_DATES] - Dates of service days, fundraisers, etc. with higher hours
-
-**Usage Instructions**: Paste your volunteer timesheet data after this prompt. For best results, provide data in a consistent format with volunteer name, date, hours, and program/activity.</pre>
+&lt;/OUTPUT&gt;</pre>
         </div>
     </div>
     

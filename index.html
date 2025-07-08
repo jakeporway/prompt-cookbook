@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nonprofit AI Cookbook - Standalone Version</title>
+    <title>Nonprofit AI Cookbook [Decoded Futures + OpenAI] </title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -104,8 +104,15 @@
             border: 1px solid #e0e0e0;
         }
         .use-case-card h4 {
-            margin: 0 0 15px 0;
+            margin: 0 0 10px 0;
             color: #333;
+        }
+        .action-description {
+            margin: 0 0 15px 0;
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.4;
+            font-style: italic;
         }
         .complexity-buttons {
             display: flex;
@@ -160,22 +167,126 @@
         .errors ul {
             margin-bottom: 0;
         }
+        .intro-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .intro-section h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .intro-section h3 {
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .intro-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .intro-section li {
+            margin-bottom: 5px;
+        }
+        .complexity-examples {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .complexity-examples h4 {
+            margin-top: 0;
+            color: #495057;
+        }
+        .jam-day-highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .jam-day-highlight h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .steps {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .steps h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+        .steps ol {
+            margin-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Nonprofit AI Cookbook</h1>
-        <p>Standalone HTML Version - AI-powered prompt templates for nonprofit organizations</p>
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-number">5</div>
-                <div>Categories</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">365</div>
-                <div>Available Templates</div>
-            </div>
+        <h1>Nonprofit AI Cookbook for OpenAI Jam Day</h1>
+        <h2><i>Created by Decoded Futures</i></h2>
+        <p>Your guide to getting started with prompting ChatGPT for common nonprofit challenges</p>
+    </div>
+    
+    <div class="intro-section">
+        <h2>What is this?</h2>
+        <p>The AI Prompt Cookbook is your nonprofit's guide to getting started with artificial intelligence tools like ChatGPT, Claude, and Gemini. Instead of staring at a blank chat box wondering what to ask, this cookbook provides you with ready-to-use prompts that solve real nonprofit challenges.</p>
+        
+        <h2>How it's organized</h2>
+        <p>We've categorized nonprofit AI solutions into <strong>5 core problem types</strong>:</p>
+        <ul>
+            <li><strong>Create and Communicate</strong> - Content creation, communications, and storytelling</li>
+            <li><strong>Automate the Admin</strong> - Repetitive task automation and administrative efficiency</li>
+            <li><strong>Answer and Assist</strong> - Question answering, support, and guidance systems</li>
+            <li><strong>Sort and Scan</strong> - Information categorization, evaluation, and prioritization</li>
+            <li><strong>Learn and Decide</strong> - Data analysis, research, and strategic decision-making</li>
+        </ul>
+        
+        <div class="complexity-examples">
+            <h4>Each problem has three complexity levels:</h4>
+            <ul>
+                <li><strong>Low Complexity</strong>: Simple, copy-paste ready prompts that work great in ChatGPT's web interface. Perfect for beginners who want to get started quickly.</li>
+                <li><strong>Medium Complexity</strong>: More structured templates with specific sections and recommendations for which AI model to use. Good for when you want more control over the output.</li>
+                <li><strong>High Complexity</strong>: Comprehensive templates with detailed instructions, examples, and constraints. Best for complex tasks that need precise, professional results.</li>
+            </ul>
         </div>
+        
+        <div class="jam-day-highlight">
+            <h3>For Jam Day: Keep it simple!</h3>
+            <p>Don't get overwhelmed by all the options. Focus on finding <strong>1-2 templates</strong> that match your current challenges. You can always come back and explore more later.</p>
+        </div>
+        
+        <div class="steps">
+            <h3>Step-by-step guide (for first-time AI users):</h3>
+            <ol>
+                <li><strong>Browse the categories</strong> - Click through the 5 problem types below to see what kinds of challenges AI can help with</li>
+                <li><strong>Find your problem</strong> - Look for templates that describe challenges you're actually facing at your organization</li>
+                <li><strong>Start with Low complexity</strong> - These are designed to work immediately without any setup</li>
+                <li><strong>Copy the template</strong> - Click the "Copy Template" button on any template page</li>
+                <li><strong>Open ChatGPT</strong> - Go to chat.openai.com and create a free account if you don't have one</li>
+                <li><strong>Paste and customize</strong> - Paste the template into ChatGPT and replace the [PLACEHOLDERS] with your specific information</li>
+                <li><strong>Hit enter and iterate</strong> - Send your prompt, then ask follow-up questions to refine the results</li>
+            </ol>
+        </div>
+        
+        <h3>Tips for success:</h3>
+        <ul>
+            <li><strong>Be specific</strong>: Replace [ORGANIZATION_NAME] with your actual organization name, [MISSION_FOCUS] with your specific cause, etc.</li>
+            <li><strong>Don't be afraid to ask for changes</strong>: If the first result isn't quite right, ask ChatGPT to "make it more formal" or "add more details about X"</li>
+            <li><strong>Try multiple approaches</strong>: If one template doesn't work perfectly, try a different one from the same category</li>
+            <li><strong>Save what works</strong>: Keep copies of prompts that work well for your organization</li>
+        </ul>
+        
+        <p><strong>Remember:</strong> AI is a tool to help you work faster and more effectively, not to replace your expertise. You know your organization best - use these templates as starting points and customize them to fit your unique needs and voice.</p>
     </div>
     
     <div class="categories">
@@ -195,6 +306,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Social media posts and content calendars</h4>
+                                <p class="action-description">Creates a calendar of 12-15 social media posts using nonprofit information and current trends</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/social_media_posts_and_content_calendars_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/social_media_posts_and_content_calendars_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/social_media_posts_and_content_calendars_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -202,6 +314,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Thank you letters and donor communications</h4>
+                                <p class="action-description">Generates personalized thank you messages that acknowledge specific donor contributions and impact</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/thank_you_letters_and_donor_communications_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/thank_you_letters_and_donor_communications_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/thank_you_letters_and_donor_communications_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -209,6 +322,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Blog posts and thought leadership articles</h4>
+                                <p class="action-description">Writes compelling blog posts that showcase organizational expertise and thought leadership</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/blog_posts_and_thought_leadership_articles_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/blog_posts_and_thought_leadership_articles_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/blog_posts_and_thought_leadership_articles_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -216,6 +330,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Press releases and media announcements</h4>
+                                <p class="action-description">Crafts professional press releases formatted for media distribution and maximum coverage</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/press_releases_and_media_announcements_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/press_releases_and_media_announcements_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/press_releases_and_media_announcements_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -223,6 +338,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Newsletter content and email campaigns</h4>
+                                <p class="action-description">Develops engaging newsletter content with multiple sections and clear calls to action</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/newsletter_content_and_email_campaigns_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/newsletter_content_and_email_campaigns_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/newsletter_content_and_email_campaigns_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -230,6 +346,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Website copy and program descriptions</h4>
+                                <p class="action-description">Writes clear, compelling website copy that explains programs and services effectively</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/website_copy_and_program_descriptions_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/website_copy_and_program_descriptions_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/website_copy_and_program_descriptions_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -237,6 +354,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event promotional materials</h4>
+                                <p class="action-description">Creates promotional content that drives event attendance and communicates key details</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/event_promotional_materials_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/event_promotional_materials_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/event_promotional_materials_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -244,6 +362,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Corporate partnership pitches</h4>
+                                <p class="action-description">Develops professional partnership proposals that align business and nonprofit goals</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_generation_from_scratch/corporate_partnership_pitches_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_generation_from_scratch/corporate_partnership_pitches_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_generation_from_scratch/corporate_partnership_pitches_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -259,6 +378,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Board reports and meeting materials</h4>
+                                <p class="action-description">Compiles comprehensive board reports with data analysis and recommendations from multiple sources</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/structured_report_creation/board_reports_and_meeting_materials_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/structured_report_creation/board_reports_and_meeting_materials_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/structured_report_creation/board_reports_and_meeting_materials_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -266,6 +386,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Annual reports and impact summaries</h4>
+                                <p class="action-description">Creates structured annual reports with impact stories, data visualization, and stakeholder messaging</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/structured_report_creation/annual_reports_and_impact_summaries_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/structured_report_creation/annual_reports_and_impact_summaries_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/structured_report_creation/annual_reports_and_impact_summaries_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -273,6 +394,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Grant reports and compliance documentation</h4>
+                                <p class="action-description">Generates detailed compliance reports that meet funder requirements and reporting standards</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/structured_report_creation/grant_reports_and_compliance_documentation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/structured_report_creation/grant_reports_and_compliance_documentation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/structured_report_creation/grant_reports_and_compliance_documentation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -280,6 +402,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Program summaries for stakeholders</h4>
+                                <p class="action-description">Summarizes complex program outcomes tailored for different stakeholder audiences</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/structured_report_creation/program_summaries_for_stakeholders_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/structured_report_creation/program_summaries_for_stakeholders_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/structured_report_creation/program_summaries_for_stakeholders_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -287,6 +410,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Strategic planning documents</h4>
+                                <p class="action-description">Transforms strategic planning discussions into structured, actionable implementation documents</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/structured_report_creation/strategic_planning_documents_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/structured_report_creation/strategic_planning_documents_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/structured_report_creation/strategic_planning_documents_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -294,6 +418,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Audit responses and evaluation reports</h4>
+                                <p class="action-description">Develops formal responses to audit findings with corrective action plans and timelines</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/structured_report_creation/audit_responses_and_evaluation_reports_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/structured_report_creation/audit_responses_and_evaluation_reports_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/structured_report_creation/audit_responses_and_evaluation_reports_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -309,6 +434,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Personalized donor appeal letters</h4>
+                                <p class="action-description">Generates customized appeal letters for specific donor segments while maintaining authentic organizational voice</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/template_filling_personalization/personalized_donor_appeal_letters_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/template_filling_personalization/personalized_donor_appeal_letters_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/template_filling_personalization/personalized_donor_appeal_letters_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -316,6 +442,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer recruitment and onboarding communications</h4>
+                                <p class="action-description">Creates tailored volunteer recruitment and onboarding communications for different roles and skill levels</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/template_filling_personalization/volunteer_recruitment_and_onboarding_communications_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/template_filling_personalization/volunteer_recruitment_and_onboarding_communications_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/template_filling_personalization/volunteer_recruitment_and_onboarding_communications_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -323,6 +450,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Client service communications and follow-ups</h4>
+                                <p class="action-description">Personalizes client communications and follow-ups while maintaining professional standards and consistency</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/template_filling_personalization/client_service_communications_and_follow_ups_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/template_filling_personalization/client_service_communications_and_follow_ups_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/template_filling_personalization/client_service_communications_and_follow_ups_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -330,6 +458,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event invitations and confirmations</h4>
+                                <p class="action-description">Customizes event invitations and confirmations for different attendee types and registration levels</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/template_filling_personalization/event_invitations_and_confirmations_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/template_filling_personalization/event_invitations_and_confirmations_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/template_filling_personalization/event_invitations_and_confirmations_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -337,6 +466,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Certificate and award generation</h4>
+                                <p class="action-description">Generates personalized certificates and awards for volunteers and donors with specific achievement details</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/template_filling_personalization/certificate_and_award_generation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/template_filling_personalization/certificate_and_award_generation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/template_filling_personalization/certificate_and_award_generation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -352,6 +482,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Converting brochures to website copy</h4>
+                                <p class="action-description">Converts print brochures into web-optimized copy with appropriate formatting and digital engagement elements</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_adaptation_reformatting/converting_brochures_to_website_copy_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_adaptation_reformatting/converting_brochures_to_website_copy_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_adaptation_reformatting/converting_brochures_to_website_copy_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -359,6 +490,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Adapting newsletters into social media posts</h4>
+                                <p class="action-description">Transforms newsletter content into engaging social media posts with platform-specific formatting and hashtags</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_adaptation_reformatting/adapting_newsletters_into_social_media_posts_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_adaptation_reformatting/adapting_newsletters_into_social_media_posts_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_adaptation_reformatting/adapting_newsletters_into_social_media_posts_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -366,6 +498,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Creating executive summaries from detailed reports</h4>
+                                <p class="action-description">Condenses detailed reports into executive summaries highlighting key findings and recommendations</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_adaptation_reformatting/creating_executive_summaries_from_detailed_reports_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_adaptation_reformatting/creating_executive_summaries_from_detailed_reports_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_adaptation_reformatting/creating_executive_summaries_from_detailed_reports_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -373,6 +506,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Converting written content to video scripts</h4>
+                                <p class="action-description">Transforms written materials into engaging video scripts with visual cues and timing considerations</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/content_adaptation_reformatting/converting_written_content_to_video_scripts_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/content_adaptation_reformatting/converting_written_content_to_video_scripts_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/content_adaptation_reformatting/converting_written_content_to_video_scripts_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -388,6 +522,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Multi-language program materials</h4>
+                                <p class="action-description">Translates program materials into multiple languages while maintaining cultural sensitivity and accuracy</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/translation_accessibility_conversion/multi_language_program_materials_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/translation_accessibility_conversion/multi_language_program_materials_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/translation_accessibility_conversion/multi_language_program_materials_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -395,6 +530,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Plain language versions of complex documents</h4>
+                                <p class="action-description">Converts complex policies and procedures into plain language versions accessible to diverse audiences</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/translation_accessibility_conversion/plain_language_versions_of_complex_documents_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/translation_accessibility_conversion/plain_language_versions_of_complex_documents_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/translation_accessibility_conversion/plain_language_versions_of_complex_documents_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -402,6 +538,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Cultural adaptation of messaging</h4>
+                                <p class="action-description">Adapts organizational messaging for different cultural communities while maintaining authenticity and avoiding misunderstandings</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/translation_accessibility_conversion/cultural_adaptation_of_messaging_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/translation_accessibility_conversion/cultural_adaptation_of_messaging_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/translation_accessibility_conversion/cultural_adaptation_of_messaging_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -409,6 +546,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Multi-language social media content</h4>
+                                <p class="action-description">Creates social media content in multiple languages with culturally appropriate messaging and engagement strategies</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/translation_accessibility_conversion/multi_language_social_media_content_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/translation_accessibility_conversion/multi_language_social_media_content_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/translation_accessibility_conversion/multi_language_social_media_content_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -424,6 +562,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Infographics about programs and impact</h4>
+                                <p class="action-description">Designs compelling infographics that visually communicate program impact and organizational achievements</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/visual_content_creation/infographics_about_programs_and_impact_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/visual_content_creation/infographics_about_programs_and_impact_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/visual_content_creation/infographics_about_programs_and_impact_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -431,6 +570,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Social media graphics and quote cards</h4>
+                                <p class="action-description">Creates eye-catching social media graphics and quote cards with consistent branding and messaging</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/visual_content_creation/social_media_graphics_and_quote_cards_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/visual_content_creation/social_media_graphics_and_quote_cards_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/visual_content_creation/social_media_graphics_and_quote_cards_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -438,6 +578,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event flyers and promotional images</h4>
+                                <p class="action-description">Designs professional event flyers and promotional images with key details and compelling visual elements</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/visual_content_creation/event_flyers_and_promotional_images_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/visual_content_creation/event_flyers_and_promotional_images_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/visual_content_creation/event_flyers_and_promotional_images_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -445,6 +586,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Presentation slide designs</h4>
+                                <p class="action-description">Designs visually appealing presentation slides that maintain audience attention and support key messages</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/visual_content_creation/presentation_slide_designs_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/visual_content_creation/presentation_slide_designs_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/visual_content_creation/presentation_slide_designs_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -452,6 +594,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Photo captions and alt text</h4>
+                                <p class="action-description">Writes compelling photo captions and accessibility-compliant alt text that describe visual content effectively</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/visual_content_creation/photo_captions_and_alt_text_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/visual_content_creation/photo_captions_and_alt_text_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/visual_content_creation/photo_captions_and_alt_text_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -467,6 +610,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Video scripts for programs and testimonials</h4>
+                                <p class="action-description">Writes engaging video scripts that tell organizational stories effectively through visual storytelling techniques</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/script_narrative_writing/video_scripts_for_programs_and_testimonials_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/script_narrative_writing/video_scripts_for_programs_and_testimonials_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/script_narrative_writing/video_scripts_for_programs_and_testimonials_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -474,6 +618,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Speech writing for events and presentations</h4>
+                                <p class="action-description">Crafts memorable speeches that inspire action and connect with audiences through compelling narratives</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/script_narrative_writing/speech_writing_for_events_and_presentations_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/script_narrative_writing/speech_writing_for_events_and_presentations_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/script_narrative_writing/speech_writing_for_events_and_presentations_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -481,6 +626,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Podcast episode outlines and show notes</h4>
+                                <p class="action-description">Creates structured podcast episode outlines and show notes that engage listeners through compelling audio storytelling</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/script_narrative_writing/podcast_episode_outlines_and_show_notes_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/script_narrative_writing/podcast_episode_outlines_and_show_notes_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/script_narrative_writing/podcast_episode_outlines_and_show_notes_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -496,6 +642,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Impact stories from program data</h4>
+                                <p class="action-description">Transforms program statistics into compelling impact stories that connect with donors and stakeholders</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/data_storytelling/impact_stories_from_program_data_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/data_storytelling/impact_stories_from_program_data_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/data_storytelling/impact_stories_from_program_data_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -503,6 +650,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Survey result summaries and insights</h4>
+                                <p class="action-description">Analyzes survey data and presents insights clearly through accessible summaries and actionable recommendations</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/data_storytelling/survey_result_summaries_and_insights_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/data_storytelling/survey_result_summaries_and_insights_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/data_storytelling/survey_result_summaries_and_insights_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -510,6 +658,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Fundraising case statements with evidence</h4>
+                                <p class="action-description">Creates compelling fundraising case statements that combine data evidence with persuasive storytelling</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/data_storytelling/fundraising_case_statements_with_evidence_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/data_storytelling/fundraising_case_statements_with_evidence_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/data_storytelling/fundraising_case_statements_with_evidence_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -517,6 +666,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Financial report explanations for donors</h4>
+                                <p class="action-description">Translates financial reports into understandable and compelling narratives for donor communication</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/data_storytelling/financial_report_explanations_for_donors_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/data_storytelling/financial_report_explanations_for_donors_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/data_storytelling/financial_report_explanations_for_donors_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -532,6 +682,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Staff handbooks and policy manuals</h4>
+                                <p class="action-description">Creates comprehensive staff handbooks and policy manuals that cover all policies in clear, readable formats</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/policy_procedure_documentation/staff_handbooks_and_policy_manuals_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/policy_procedure_documentation/staff_handbooks_and_policy_manuals_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/policy_procedure_documentation/staff_handbooks_and_policy_manuals_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -539,6 +690,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Training materials and onboarding guides</h4>
+                                <p class="action-description">Develops thorough training materials and onboarding guides that new staff can follow independently</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/policy_procedure_documentation/training_materials_and_onboarding_guides_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/policy_procedure_documentation/training_materials_and_onboarding_guides_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/policy_procedure_documentation/training_materials_and_onboarding_guides_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -546,6 +698,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer agreements and contracts</h4>
+                                <p class="action-description">Creates clear volunteer agreements and contracts that protect the organization while maintaining welcoming tone</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/policy_procedure_documentation/volunteer_agreements_and_contracts_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/policy_procedure_documentation/volunteer_agreements_and_contracts_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/policy_procedure_documentation/volunteer_agreements_and_contracts_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -553,6 +706,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Safety protocols and emergency procedures</h4>
+                                <p class="action-description">Documents safety protocols and emergency procedures with clear, actionable steps that staff can follow</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/policy_procedure_documentation/safety_protocols_and_emergency_procedures_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/policy_procedure_documentation/safety_protocols_and_emergency_procedures_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/policy_procedure_documentation/safety_protocols_and_emergency_procedures_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -568,6 +722,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Training curricula and workshop activities</h4>
+                                <p class="action-description">Designs engaging training curricula and workshop activities that achieve specific learning objectives</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/interactive_content_creation/training_curricula_and_workshop_activities_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/interactive_content_creation/training_curricula_and_workshop_activities_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/interactive_content_creation/training_curricula_and_workshop_activities_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -575,6 +730,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Survey design and evaluation forms</h4>
+                                <p class="action-description">Creates surveys and evaluation forms that gather useful data without overwhelming respondents</p>
                                 <div class="complexity-buttons">
                                     <a href="create_and_communicate/interactive_content_creation/survey_design_and_evaluation_forms_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="create_and_communicate/interactive_content_creation/survey_design_and_evaluation_forms_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="create_and_communicate/interactive_content_creation/survey_design_and_evaluation_forms_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -601,6 +757,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Processing volunteer timesheets and hour tracking</h4>
+                                <p class="action-description">Processes volunteer timesheets and tracks hours efficiently with automated verification and reporting</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/processing_volunteer_timesheets_and_hour_tracking_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/processing_volunteer_timesheets_and_hour_tracking_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/processing_volunteer_timesheets_and_hour_tracking_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -608,6 +765,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Reviewing expense reports and receipts</h4>
+                                <p class="action-description">Reviews expense reports and receipts for compliance and accuracy with systematic verification processes</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/reviewing_expense_reports_and_receipts_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/reviewing_expense_reports_and_receipts_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/reviewing_expense_reports_and_receipts_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -615,6 +773,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Data entry between different systems (CRM to accounting)</h4>
+                                <p class="action-description">Transfers data between different systems like CRM to accounting with error checking and validation</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/data_entry_between_different_systems_crm_to_accounting_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/data_entry_between_different_systems_crm_to_accounting_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/data_entry_between_different_systems_crm_to_accounting_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -622,6 +781,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Invoice processing and vendor management</h4>
+                                <p class="action-description">Processes invoices and manages vendor information with automated workflows and approval tracking</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/invoice_processing_and_vendor_management_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/invoice_processing_and_vendor_management_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/invoice_processing_and_vendor_management_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -629,6 +789,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Membership data updates and maintenance</h4>
+                                <p class="action-description">Updates and maintains membership data across systems with consistency checks and automated synchronization</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/membership_data_updates_and_maintenance_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/membership_data_updates_and_maintenance_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/membership_data_updates_and_maintenance_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -636,6 +797,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event registration data processing</h4>
+                                <p class="action-description">Processes event registrations and manages attendee information with automated categorization and tracking</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/event_registration_data_processing_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/event_registration_data_processing_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/event_registration_data_processing_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -643,6 +805,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Financial reconciliation and reporting</h4>
+                                <p class="action-description">Reconciles financial accounts and prepares reports with systematic verification and automated calculations</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/repetitive_data_processing/financial_reconciliation_and_reporting_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/repetitive_data_processing/financial_reconciliation_and_reporting_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/repetitive_data_processing/financial_reconciliation_and_reporting_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -658,6 +821,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Appointment scheduling and calendar management</h4>
+                                <p class="action-description">Coordinates appointments and manages calendars across multiple staff with automated scheduling and conflict resolution</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/appointment_scheduling_and_calendar_management_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/appointment_scheduling_and_calendar_management_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/appointment_scheduling_and_calendar_management_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -665,6 +829,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Membership renewals and payment reminders</h4>
+                                <p class="action-description">Sends timely membership renewal reminders and payment notices with automated scheduling and tracking</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/membership_renewals_and_payment_reminders_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/membership_renewals_and_payment_reminders_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/membership_renewals_and_payment_reminders_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -672,6 +837,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event registration follow-ups and confirmations</h4>
+                                <p class="action-description">Follows up on event registrations and sends confirmations with automated tracking and personalized messaging</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/event_registration_follow_ups_and_confirmations_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/event_registration_follow_ups_and_confirmations_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/event_registration_follow_ups_and_confirmations_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -679,6 +845,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer shift reminders and updates</h4>
+                                <p class="action-description">Coordinates volunteer schedules and sends shift reminders with automated tracking and update notifications</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/volunteer_shift_reminders_and_updates_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/volunteer_shift_reminders_and_updates_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/volunteer_shift_reminders_and_updates_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -686,6 +853,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Donor acknowledgment and receipt automation</h4>
+                                <p class="action-description">Sends timely donor acknowledgments and receipts with automated personalization and tax compliance</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/donor_acknowledgment_and_receipt_automation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/donor_acknowledgment_and_receipt_automation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/donor_acknowledgment_and_receipt_automation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -693,6 +861,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Client check-in and follow-up messages</h4>
+                                <p class="action-description">Maintains regular client contact through automated check-ins and follow-ups with personalized messaging</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/client_check_in_and_follow_up_messages_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/client_check_in_and_follow_up_messages_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/client_check_in_and_follow_up_messages_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -700,6 +869,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Board meeting reminders and material distribution</h4>
+                                <p class="action-description">Coordinates board meetings and distributes materials with automated reminders and deadline tracking</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/automated_communications/board_meeting_reminders_and_material_distribution_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/automated_communications/board_meeting_reminders_and_material_distribution_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/automated_communications/board_meeting_reminders_and_material_distribution_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -715,6 +885,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Compliance reporting and form submissions</h4>
+                                <p class="action-description">Reviews forms for compliance before submission with systematic verification against regulatory requirements</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/compliance_reporting_and_form_submissions_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/compliance_reporting_and_form_submissions_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/compliance_reporting_and_form_submissions_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -722,6 +893,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Grant application completeness checks</h4>
+                                <p class="action-description">Ensures grant applications are complete and meet all requirements through systematic review and verification</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/grant_application_completeness_checks_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/grant_application_completeness_checks_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/grant_application_completeness_checks_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -729,6 +901,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer background check processing</h4>
+                                <p class="action-description">Processes volunteer background checks efficiently while maintaining safety standards through systematic review</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/volunteer_background_check_processing_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/volunteer_background_check_processing_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/volunteer_background_check_processing_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -736,6 +909,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Client intake form validation</h4>
+                                <p class="action-description">Reviews client intake forms for completeness and accuracy with systematic validation and error flagging</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/client_intake_form_validation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/client_intake_form_validation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/client_intake_form_validation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -743,6 +917,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Financial document verification</h4>
+                                <p class="action-description">Verifies financial documents for accuracy and compliance with systematic checking against established requirements</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/financial_document_verification_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/financial_document_verification_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/financial_document_verification_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -750,6 +925,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Contract review and approval workflows</h4>
+                                <p class="action-description">Reviews contracts for approval with systematic tracking of approval processes and legal compliance verification</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/contract_review_and_approval_workflows_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/contract_review_and_approval_workflows_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/contract_review_and_approval_workflows_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -757,6 +933,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Policy compliance auditing</h4>
+                                <p class="action-description">Audits organizational practices for policy compliance through systematic review and documentation of findings</p>
                                 <div class="complexity-buttons">
                                     <a href="automate_the_admin/form_document_review/policy_compliance_auditing_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="automate_the_admin/form_document_review/policy_compliance_auditing_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="automate_the_admin/form_document_review/policy_compliance_auditing_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -783,6 +960,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Volunteer program FAQs and onboarding questions</h4>
+                                <p class="action-description">Answers volunteer program FAQs and onboarding questions with consistent, comprehensive responses from knowledge base</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/volunteer_program_faqs_and_onboarding_questions_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/volunteer_program_faqs_and_onboarding_questions_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/volunteer_program_faqs_and_onboarding_questions_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -790,6 +968,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Donor inquiries about programs and impact</h4>
+                                <p class="action-description">Responds to donor inquiries about programs and impact with detailed, accurate information from multiple sources</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/donor_inquiries_about_programs_and_impact_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/donor_inquiries_about_programs_and_impact_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/donor_inquiries_about_programs_and_impact_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -797,6 +976,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Staff questions about policies and procedures</h4>
+                                <p class="action-description">Answers staff questions about policies and procedures with consistent, detailed responses from organizational knowledge base</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/staff_questions_about_policies_and_procedures_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/staff_questions_about_policies_and_procedures_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/staff_questions_about_policies_and_procedures_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -804,6 +984,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Board member questions about governance</h4>
+                                <p class="action-description">Provides board members with quick access to governance information and procedures through structured knowledge base</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/board_member_questions_about_governance_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/board_member_questions_about_governance_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/board_member_questions_about_governance_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -811,6 +992,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Partner organization coordination questions</h4>
+                                <p class="action-description">Coordinates with partner organizations by answering questions about procedures and expectations with clear guidance</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/partner_organization_coordination_questions_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/partner_organization_coordination_questions_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/partner_organization_coordination_questions_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -818,6 +1000,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event attendee logistics and information</h4>
+                                <p class="action-description">Provides event attendees with quick answers to logistics questions and essential information through automated responses</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/event_attendee_logistics_and_information_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/event_attendee_logistics_and_information_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/event_attendee_logistics_and_information_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -825,6 +1008,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Program participant service questions</h4>
+                                <p class="action-description">Answers program participant service questions immediately with personalized guidance to maintain engagement and satisfaction</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/faq_knowledge_base_responses/program_participant_service_questions_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/faq_knowledge_base_responses/program_participant_service_questions_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/faq_knowledge_base_responses/program_participant_service_questions_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -840,6 +1024,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Client service navigation and support</h4>
+                                <p class="action-description">Helps clients navigate services and support options with personalized guidance based on individual needs and available resources</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/client_service_navigation_and_support_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/client_service_navigation_and_support_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/personalized_support_guidance/client_service_navigation_and_support_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -847,6 +1032,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Grant application guidance and coaching</h4>
+                                <p class="action-description">Provides personalized grant application guidance and coaching based on funder requirements and organizational capacity</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/grant_application_guidance_and_coaching_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/grant_application_guidance_and_coaching_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/personalized_support_guidance/grant_application_guidance_and_coaching_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -854,6 +1040,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer placement and matching assistance</h4>
+                                <p class="action-description">Matches volunteers with appropriate opportunities by analyzing volunteer skills and organizational needs for optimal placement</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/volunteer_placement_and_matching_assistance_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/volunteer_placement_and_matching_assistance_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/personalized_support_guidance/volunteer_placement_and_matching_assistance_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -861,6 +1048,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Donor stewardship and engagement planning</h4>
+                                <p class="action-description">Creates personalized donor stewardship and engagement plans based on individual donor interests and giving capacity</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/donor_stewardship_and_engagement_planning_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/donor_stewardship_and_engagement_planning_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/personalized_support_guidance/donor_stewardship_and_engagement_planning_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -868,6 +1056,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Staff professional development guidance</h4>
+                                <p class="action-description">Provides personalized professional development guidance based on individual career goals and organizational needs</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/staff_professional_development_guidance_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/staff_professional_development_guidance_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/personalized_support_guidance/staff_professional_development_guidance_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -875,6 +1064,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Program participant troubleshooting</h4>
+                                <p class="action-description">Helps program participants troubleshoot issues with personalized solutions based on individual circumstances and available resources</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/program_participant_troubleshooting_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/program_participant_troubleshooting_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="answer_and_assist/personalized_support_guidance/program_participant_troubleshooting_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -882,6 +1072,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Community member resource referrals</h4>
+                                <p class="action-description">Connects community members with appropriate resources based on knowledge of available services and eligibility requirements</p>
                                 <div class="complexity-buttons">
                                     <a href="answer_and_assist/personalized_support_guidance/community_member_resource_referrals_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="answer_and_assist/personalized_support_guidance/community_member_resource_referrals_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a>
                                 </div>
@@ -908,6 +1099,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Grant application initial screening</h4>
+                                <p class="action-description">Screens grant applications for eligibility and fit through systematic review against multiple criteria and scoring rubrics</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/grant_application_initial_screening_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/grant_application_initial_screening_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/grant_application_initial_screening_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -915,6 +1107,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Scholarship candidate evaluation</h4>
+                                <p class="action-description">Evaluates scholarship candidates fairly and efficiently through consistent application of criteria across multiple applications</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/scholarship_candidate_evaluation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/scholarship_candidate_evaluation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/scholarship_candidate_evaluation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -922,6 +1115,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer application processing</h4>
+                                <p class="action-description">Processes volunteer applications to identify best fits through systematic review and background verification</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/volunteer_application_processing_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/volunteer_application_processing_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/volunteer_application_processing_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -929,6 +1123,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Job applicant resume screening</h4>
+                                <p class="action-description">Screens job applicant resumes efficiently while ensuring fair consideration through systematic qualification review</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/job_applicant_resume_screening_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/job_applicant_resume_screening_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/job_applicant_resume_screening_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -936,6 +1131,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Board member candidate assessment</h4>
+                                <p class="action-description">Evaluates board member candidates by assessing skills, experience, and organizational fit against strategic needs</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/board_member_candidate_assessment_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/board_member_candidate_assessment_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/board_member_candidate_assessment_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -943,6 +1139,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Vendor proposal evaluation</h4>
+                                <p class="action-description">Evaluates vendor proposals objectively through systematic comparison against established criteria and scoring systems</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/vendor_proposal_evaluation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/vendor_proposal_evaluation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/vendor_proposal_evaluation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -950,6 +1147,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Program participant selection</h4>
+                                <p class="action-description">Selects program participants fairly when demand exceeds capacity through consistent application of eligibility criteria</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/application_candidate_screening/program_participant_selection_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/application_candidate_screening/program_participant_selection_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/application_candidate_screening/program_participant_selection_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -965,6 +1163,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Email triage and response prioritization</h4>
+                                <p class="action-description">Triages emails and prioritizes responses by identifying urgent communications and categorizing by importance and topic</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/email_triage_and_response_prioritization_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/email_triage_and_response_prioritization_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/email_triage_and_response_prioritization_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -972,6 +1171,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Survey response categorization and analysis</h4>
+                                <p class="action-description">Categorizes survey responses into meaningful categories and analyzes patterns to identify key themes and insights</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/survey_response_categorization_and_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/survey_response_categorization_and_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/survey_response_categorization_and_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -979,6 +1179,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Donor prospect identification and ranking</h4>
+                                <p class="action-description">Identifies and ranks potential donors from community contacts through systematic research and capacity evaluation</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/donor_prospect_identification_and_ranking_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/donor_prospect_identification_and_ranking_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/donor_prospect_identification_and_ranking_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -986,6 +1187,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Social media mention monitoring and response</h4>
+                                <p class="action-description">Monitors social media mentions and determines response priorities through systematic tracking and sentiment analysis</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/social_media_mention_monitoring_and_response_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/social_media_mention_monitoring_and_response_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/social_media_mention_monitoring_and_response_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -993,6 +1195,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Feedback and complaint categorization</h4>
+                                <p class="action-description">Categorizes feedback and complaints to identify patterns and route to appropriate responses through systematic organization</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/feedback_and_complaint_categorization_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/feedback_and_complaint_categorization_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/feedback_and_complaint_categorization_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1000,6 +1203,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Media coverage tracking and analysis</h4>
+                                <p class="action-description">Tracks media coverage and analyzes impact through systematic monitoring and evaluation of reach and sentiment</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/media_coverage_tracking_and_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/media_coverage_tracking_and_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/media_coverage_tracking_and_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1007,6 +1211,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Community input organization and themes</h4>
+                                <p class="action-description">Organizes community input from multiple sources to identify themes and priorities through systematic categorization and analysis</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/content_categorization_prioritization/community_input_organization_and_themes_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/content_categorization_prioritization/community_input_organization_and_themes_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/content_categorization_prioritization/community_input_organization_and_themes_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1022,6 +1227,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Program proposal evaluation and feedback</h4>
+                                <p class="action-description">Evaluates program proposals consistently and provides constructive feedback through systematic assessment against quality criteria</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/program_proposal_evaluation_and_feedback_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/program_proposal_evaluation_and_feedback_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/program_proposal_evaluation_and_feedback_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1029,6 +1235,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Training material quality assessment</h4>
+                                <p class="action-description">Assesses training materials for quality and effectiveness through systematic review of instructional design and learning outcomes</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/training_material_quality_assessment_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/training_material_quality_assessment_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/training_material_quality_assessment_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1036,6 +1243,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Event planning proposal scoring</h4>
+                                <p class="action-description">Scores event planning proposals objectively through systematic comparison against established criteria and budget constraints</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/event_planning_proposal_scoring_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/event_planning_proposal_scoring_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/event_planning_proposal_scoring_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1043,6 +1251,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Marketing material effectiveness review</h4>
+                                <p class="action-description">Reviews marketing materials for effectiveness by analyzing target audience alignment and messaging strategy impact</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/marketing_material_effectiveness_review_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/marketing_material_effectiveness_review_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/marketing_material_effectiveness_review_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1050,6 +1259,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Partner organization capability assessment</h4>
+                                <p class="action-description">Assesses partner organizations for capability and fit through systematic evaluation of capacity and mission alignment</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/partner_organization_capability_assessment_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/partner_organization_capability_assessment_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/partner_organization_capability_assessment_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1057,6 +1267,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Service delivery quality evaluation</h4>
+                                <p class="action-description">Evaluates service delivery quality through systematic assessment against established standards and client feedback analysis</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/service_delivery_quality_evaluation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/service_delivery_quality_evaluation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/service_delivery_quality_evaluation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1064,6 +1275,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Content quality assurance and editing</h4>
+                                <p class="action-description">Ensures content quality and consistency across all materials through systematic review and editing processes</p>
                                 <div class="complexity-buttons">
                                     <a href="sort_and_scan/quality_assessment_scoring/content_quality_assurance_and_editing_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="sort_and_scan/quality_assessment_scoring/content_quality_assurance_and_editing_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="sort_and_scan/quality_assessment_scoring/content_quality_assurance_and_editing_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1090,6 +1302,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Program evaluation data analysis</h4>
+                                <p class="action-description">Analyzes program evaluation data to identify trends and improvement opportunities through statistical analysis and visualization</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/program_evaluation_data_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/program_evaluation_data_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/program_evaluation_data_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1097,6 +1310,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Survey response analysis and insights</h4>
+                                <p class="action-description">Analyzes survey responses to identify actionable insights and trends through systematic data review and pattern recognition</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/survey_response_analysis_and_insights_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/survey_response_analysis_and_insights_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/survey_response_analysis_and_insights_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1104,6 +1318,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Impact measurement and outcome tracking</h4>
+                                <p class="action-description">Measures program impact and tracks outcomes through systematic evaluation methods and data analysis techniques</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/impact_measurement_and_outcome_tracking_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/impact_measurement_and_outcome_tracking_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/impact_measurement_and_outcome_tracking_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1111,6 +1326,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Financial performance analysis</h4>
+                                <p class="action-description">Analyzes financial performance to identify trends and inform strategic decisions through systematic accounting analysis</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/financial_performance_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/financial_performance_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/financial_performance_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1118,6 +1334,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Volunteer engagement and retention analysis</h4>
+                                <p class="action-description">Analyzes volunteer engagement patterns and retention factors through systematic data analysis and trend identification</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/volunteer_engagement_and_retention_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/volunteer_engagement_and_retention_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/volunteer_engagement_and_retention_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1125,6 +1342,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Donor behavior and giving pattern analysis</h4>
+                                <p class="action-description">Analyzes donor behavior and giving patterns to improve fundraising through systematic data analysis and trend identification</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/donor_behavior_and_giving_pattern_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/donor_behavior_and_giving_pattern_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/donor_behavior_and_giving_pattern_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1132,6 +1350,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Community needs assessment data interpretation</h4>
+                                <p class="action-description">Interprets community needs assessment data to inform program decisions through systematic analysis and community context integration</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/data_analysis_insights/community_needs_assessment_data_interpretation_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/data_analysis_insights/community_needs_assessment_data_interpretation_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/data_analysis_insights/community_needs_assessment_data_interpretation_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1147,6 +1366,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Best practices research for program development</h4>
+                                <p class="action-description">Researches best practices for program development by finding, reviewing, and synthesizing information from multiple authoritative sources</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/best_practices_research_for_program_development_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/best_practices_research_for_program_development_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/best_practices_research_for_program_development_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1154,6 +1374,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Policy trend analysis and implications</h4>
+                                <p class="action-description">Analyzes policy trends and their implications through systematic monitoring and impact assessment for organizational planning</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/policy_trend_analysis_and_implications_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/policy_trend_analysis_and_implications_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/policy_trend_analysis_and_implications_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1161,6 +1382,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Competitive landscape analysis</h4>
+                                <p class="action-description">Analyzes competitive landscape and organizational positioning through systematic research and strategic assessment</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/competitive_landscape_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/competitive_landscape_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/competitive_landscape_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1168,6 +1390,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Funding opportunity research and matching</h4>
+                                <p class="action-description">Researches funding opportunities and matches them to organizational capacity and mission through systematic opportunity analysis</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/funding_opportunity_research_and_matching_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/funding_opportunity_research_and_matching_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/funding_opportunity_research_and_matching_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1175,6 +1398,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Technology solution evaluation and comparison</h4>
+                                <p class="action-description">Evaluates technology solutions and compares options through systematic assessment of features, costs, and organizational fit</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/technology_solution_evaluation_and_comparison_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/technology_solution_evaluation_and_comparison_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/technology_solution_evaluation_and_comparison_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1182,6 +1406,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Partnership opportunity identification</h4>
+                                <p class="action-description">Identifies potential partnership opportunities through systematic research and relationship mapping for strategic alignment</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/partnership_opportunity_identification_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/partnership_opportunity_identification_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/partnership_opportunity_identification_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1189,6 +1414,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Regulatory compliance research and updates</h4>
+                                <p class="action-description">Researches regulatory compliance requirements and updates through systematic monitoring and interpretation of legal changes</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/research_intelligence_gathering/regulatory_compliance_research_and_updates_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/research_intelligence_gathering/regulatory_compliance_research_and_updates_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/research_intelligence_gathering/regulatory_compliance_research_and_updates_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1204,6 +1430,7 @@
                             
                             <div class="use-case-card">
                                 <h4>Budget analysis and financial forecasting</h4>
+                                <p class="action-description">Analyzes budget performance and creates financial forecasts through systematic financial analysis and projection modeling</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/budget_analysis_and_financial_forecasting_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/budget_analysis_and_financial_forecasting_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/budget_analysis_and_financial_forecasting_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1211,6 +1438,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Strategic plan development and scenario planning</h4>
+                                <p class="action-description">Develops strategic plans and creates scenario planning through systematic analysis and strategic framework development</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/strategic_plan_development_and_scenario_planning_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/strategic_plan_development_and_scenario_planning_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/strategic_plan_development_and_scenario_planning_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1218,6 +1446,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Community needs assessment and priority setting</h4>
+                                <p class="action-description">Assesses community needs and sets organizational priorities through systematic analysis and stakeholder input integration</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/community_needs_assessment_and_priority_setting_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/community_needs_assessment_and_priority_setting_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/community_needs_assessment_and_priority_setting_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1225,6 +1454,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Program expansion feasibility analysis</h4>
+                                <p class="action-description">Analyzes program expansion feasibility through systematic assessment of capacity, resources, and market conditions</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/program_expansion_feasibility_analysis_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/program_expansion_feasibility_analysis_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/program_expansion_feasibility_analysis_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1232,6 +1462,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Risk assessment and mitigation planning</h4>
+                                <p class="action-description">Identifies organizational risks and develops mitigation strategies through systematic assessment and scenario planning</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/risk_assessment_and_mitigation_planning_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/risk_assessment_and_mitigation_planning_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/risk_assessment_and_mitigation_planning_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1239,6 +1470,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Capacity building and organizational development</h4>
+                                <p class="action-description">Plans capacity building and organizational development through systematic assessment of organizational systems and change management strategies</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/capacity_building_and_organizational_development_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/capacity_building_and_organizational_development_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/capacity_building_and_organizational_development_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
@@ -1246,6 +1478,7 @@
                         
                             <div class="use-case-card">
                                 <h4>Impact projection and theory of change development</h4>
+                                <p class="action-description">Develops theories of change and projects impact through systematic program logic modeling and evaluation methodology</p>
                                 <div class="complexity-buttons">
                                     <a href="learn_and_decide/strategic_planning_forecasting/impact_projection_and_theory_of_change_development_low.html" target="_blank" class="complexity-button complexity-low">Low</a> <a href="learn_and_decide/strategic_planning_forecasting/impact_projection_and_theory_of_change_development_medium.html" target="_blank" class="complexity-button complexity-medium">Medium</a> <a href="learn_and_decide/strategic_planning_forecasting/impact_projection_and_theory_of_change_development_high.html" target="_blank" class="complexity-button complexity-high">High</a>
                                 </div>
