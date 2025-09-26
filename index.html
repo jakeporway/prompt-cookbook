@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nonprofit AI Cookbook [Decoded Futures + OpenAI] </title>
+    <title>Decoded Futures Prompt Cookbook [Tech:NYC]</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -12,7 +12,52 @@
             padding: 20px;
             line-height: 1.6;
             color: #333;
-            background: #f8f9fa;
+            background: #DAE5EF;
+        }
+        .hero-banner {
+            background: url('https://images.squarespace-cdn.com/content/v1/665de77c2e4d7304d1c14723/d27a920d-d644-4b3f-b77f-1b1bc50906b1/Screenshot+2025-03-07+at+3.22.39%E2%80%AFPM.png') center center/cover no-repeat;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            position: relative;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            border-radius: 12px;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            flex-grow: 1;
+        }
+        .hero-logo {
+            position: relative;
+            z-index: 2;
+            max-height: 80px;
+            width: auto;
+        }
+        .logo-left {
+            margin-right: auto;
+            filter: invert(1) brightness(2);
+            max-width: 150px;
+        }
+        .logo-right {
+            margin-left: auto;
+            max-width: 150px;
         }
         .header {
             background: white;
@@ -128,31 +173,46 @@
             transition: all 0.3s;
         }
         .complexity-low {
-            background: #28a745;
+            background: #6BAACF;
             color: white;
         }
         .complexity-low:hover {
-            background: #218838;
+            background: #5a99be;
         }
         .complexity-medium {
-            background: #ffc107;
-            color: #212529;
+            background: #0472ff;
+            color: white;
         }
         .complexity-medium:hover {
-            background: #e0a800;
+            background: #0361e6;
         }
         .complexity-high {
-            background: #dc3545;
+            background: #1F299C;
             color: white;
         }
         .complexity-high:hover {
-            background: #c82333;
+            background: #1a228a;
         }
         .complexity-missing {
             background: #6c757d;
             color: white;
             opacity: 0.6;
             cursor: not-allowed;
+        }
+        .footer {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 20px 0;
         }
         .errors {
             background: #f8d7da;
@@ -293,15 +353,18 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Nonprofit AI Cookbook for OpenAI Jam Day</h1>
-        <h2><i>Created by Decoded Futures</i></h2>
-        <p>Your guide to getting started with prompting ChatGPT for common nonprofit challenges</p>
+    <div class="hero-banner">
+        <img src="https://images.squarespace-cdn.com/content/v1/568af8d2d82d5e25a610856b/0604e4e9-d3a7-4a51-8e63-49a3b757ac4e/TechNYC_Lockup_Black_RGB+%281%29.png" alt="Tech:NYC Logo" class="hero-logo logo-left">
+        <div class="hero-content">
+            <h1>Decoded Futures Prompt Cookbook</h1>
+            <p>Your guide to getting started with AI tools for common nonprofit challenges</p>
+        </div>
+        <img src="https://images.squarespace-cdn.com/content/v1/665de77c2e4d7304d1c14723/bab2f260-fab6-4b18-9c38-d86dd178435c/DECODED_FUTURES%E2%80%94+Primary+Logo+%E2%80%94+White+%26+Bright+Blue+Pixels%402x.png" alt="Decoded Futures Logo" class="hero-logo logo-right">
     </div>
     
     <div class="intro-section">
         <h2>What is this?</h2>
-        <p>The AI Prompt Cookbook is your nonprofit's guide to getting started with artificial intelligence tools like ChatGPT, Claude, and Gemini. Instead of staring at a blank chat box wondering what to ask, this cookbook provides you with ready-to-use prompts that solve real nonprofit challenges.</p>
+        <p>The Decoded Futures Prompt Cookbook is your nonprofit's guide to getting started solving real workflow problems with AI tools like ChatGPT, Claude, and Gemini. Instead of staring at a blank chat box wondering what to ask, this cookbook provides you with ready-to-use prompts that solve nonprofit challenges.</p>
         
         <h2>How it's organized</h2>
         <p>We've categorized nonprofit AI solutions into <strong>5 core problem types</strong>:</p>
@@ -322,10 +385,6 @@
             </ul>
         </div>
         
-        <div class="jam-day-highlight">
-            <h3>For Jam Day: Keep it simple!</h3>
-            <p>Don't get overwhelmed by all the options. Focus on finding <strong>1-2 templates</strong> that match your current challenges. You can always come back and explore more later.</p>
-        </div>
         
         <div class="steps">
             <h3>Step-by-step guide (for first-time AI users):</h3>
@@ -1722,5 +1781,11 @@
             }
         });
     </script>
+
+    <div class="footer">
+        <hr>
+        <p>This resource was created for OpenAI's Jam Day in the summer of 2025.</p>
+        <p><strong>Disclaimer:</strong> Created on September 26, 2025 for GPT4. Use at your own risk.</p>
+    </div>
 </body>
 </html>
